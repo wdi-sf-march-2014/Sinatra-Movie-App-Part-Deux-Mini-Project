@@ -5,5 +5,12 @@ describe "Sinatra Movie Application With OMDB API" do
     Sinatra::Application
   end
 
+  describe "Home page" do
+    it "should allow accessing the home page" do
+      get '/'
+      last_response.should be_ok
+    end
+  end
+
   
 end
