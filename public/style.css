@@ -1,0 +1,131 @@
+
+/* Movies Style */
+
+#plot {
+  width: 300px;
+}
+
+.list {
+  color: black;
+  opacity: .7;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.list:hover {
+  opacity: 1;
+  font-size: 1.3em;
+}
+
+input {
+  width: 250px;
+  heigh: 100px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.container {
+	position: relative;
+	/*max-width: 980px;*/
+    	height: 540px;
+      margin: 0 10% 0 10%;
+
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url('wizard_2.jpg');
+
+   opacity: 0.3;
+
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    /*opacity: 1;*/
+}​
+
+
+body {
+	/*background: url('Wall_Street_Sign.jpg') no-repeat 0 25%;*/
+      /*opacity: 1;*/
+      /*max-width: 980px;*/
+	text-align: center;
+	font-family: 'Kite One', sans-serif;
+}
+article {
+	margin: 10px 10% 10px 10%;
+	text-align: center;
+}
+header  {
+	text-align: center;
+}
+
+ul > li {
+	display: inline;
+	padding: 0px 10px 0px 10px;
+	list-style: none;
+}
+
+button {
+	background: black;
+	width: 100px;
+	height: 25px;
+	font-size: .75em;
+	opacity: 0.4;
+	color: white;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+}
+button:hover {
+	opacity: 0.7;
+}
+
+hr {
+	text-align: center;
+}
+img[class="icon"] {
+   height: 30px;
+   width: 30px;
+   margin: 0 0px 0 0px;
+   /*border: 2px solid black;*/
+}
+footer {
+	text-align: center;
+	font-size: .75em;
+	text-align: center;
+      float: clear;
+	opacity: 1;
+}
+
+.label {
+	float: left;
+	width: 100px;
+	margin-left: 20px:;
+	text-align: left;
+}
+.value {
+	text-align: right;
+	width: 200px;
+	/*margin: 10px 20px;*/
+}
+
+#poster {
+  float: left;
+}
+
+#details {
+
+}
+#footer {
+
+}

@@ -1,9 +1,41 @@
-<!doctype html>
+<!-- Movie Layout -->
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Your Title Here</title>
+  <head lang="en">
+  <meta char="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/style.css">
+  <script type="text/javascript" src="/movies.js"></script>
+  <title>Movies</title>
 </head>
-<body>
-      <%= yield  %>
-</body>
+  <div class="container" >
+    <div class ="content">
+  <body id="container">
+    <header>
+      <h1>Movie App</h1>
+    </header>
+    <section>
+      <article>
+
+        <%= yield %>
+
+      </article>
+    </section>
+  </body>
+  </div>
+</div>
+<div id="footer">
+<footer>
+    <h2>Spencer Eldred</h2>
+    copyright - 2013
+  <ul>
+        <li><a href="https://github.com/spencereldred" title="Spencer's Github" ><img class="icon" src="/github.jpeg"
+            alt="Github" title="Github"></a>
+        </li>
+        <li><a href="http://www.linkedin.com/in/spencereldred" title="Spencer's Linked In" ><img class="icon" src="/linked_in_icon.jpg"
+            alt="Linked In" title="Linked In"></a>
+        </li>
+      </ul>
+</footer>
+</div>
 </html>
