@@ -4,8 +4,13 @@ require 'typhoeus'
 require 'json'
 require 'pry'
 
-get '/' do
+# A setup step to get rspec tests running.
+configure do
+  root = File.expand_path(File.dirname(__FILE__))
+  set :views, File.join(root,'views')
+end
 
+get '/' do
 end
 
 
