@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<!-- this should be your form -->
+
+<html>
+<header>
+	<h1>Movie Search!</h1>
+</header>
+
+<body>
+	<p>Search for a movie:</p>
+
+	<form method="get" action="/results">
+	<input type="text" name="movie" placeholder="Title or IMDB number">
+	<input type="submit">
+	</form>
+
+	<p><img src="<%=@image_url%>"/></p>
+
+	</body>
+
+	</html>

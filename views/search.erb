@@ -1,0 +1,14 @@
+<!-- includes the array...parsed JSON data?? -->
+
+
+<ul>
+	<% @omdb_data.each do |movie| %>
+	<li>
+		<a href='/poster/<%=movie["imdbID"]%>'>
+		<%=movie["Title"]%> - <%=movie["Year"]%><br></br></a>
+	</li>
+
+	<% end %>
+</ul>
+
+
