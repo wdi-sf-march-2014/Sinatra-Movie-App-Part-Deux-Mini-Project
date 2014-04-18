@@ -3,16 +3,16 @@
 	<% if @movies == nil %>
 	<p>Oops! We can't find that movie. Please search again. 
 	<form method="get" action="/results">
-	<input type="text" name="movie">
+	<input type="text" name="movie" placeholder="Search for Movies">
 	<input type="submit">
 	</form>
 	</p>
 
 
-	<% else @movies.each do |h|%>	
+	<% else @movies.each do |movie| %>	
 	<li>
-	<a href='/movie/info/<%=[":imdbID"]%>'>
-	<%=h["Title"]%> - <%=h["Year"]%><br></br></a>
+	<a href='/movie/info/<%=movie["imdbID"]%>'>
+	<%=movie["Title"]%> - <%=movie["Year"]%><br></br></a>
 	</li>
 	<% end %>
 	<% end %>
