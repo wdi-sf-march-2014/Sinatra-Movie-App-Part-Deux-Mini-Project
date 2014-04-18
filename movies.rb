@@ -19,32 +19,39 @@ get '/results' do
 
 	if params.keys.length == 0
 		erb :error
-		#throws error if no params at all
 
-	#elsif throw error if param is empty string??
+	elsif movie == ""
+		erb :error
 
 	else
 		response = Typhoeus.get("www.omdbapi.com", :params => {:s => movie })
 		parsed_response = JSON.parse(response.body)
-		all_titles = parsed_response['Search']
-		all_titles_sorted = all_titles.sort_by { |hash| hash['Year'] }
 
-		@search_results = ""
+		if parsed_response.key?('Search') == false
+			erb :error
+		
+		else
 
-		all_titles_sorted.each do |result|
-			title = result['Title'].to_s
-			year = result['Year'].to_s
-			imdbID = result['imdbID']
-			@search_results += "<br><a href=poster/#{imdbID}> #{title} - #{year}</a><br>"
+			all_titles = parsed_response['Search']
+			all_titles_sorted = all_titles.sort_by { |hash| hash['Year'] }
+
+			@title = []
+			@year = []
+			@imdbID = []
+
+			all_titles_sorted.each do |result|
+				@title.push(result['Title'].to_s)
+				@year.push('('+result['Year'].to_s+')')
+				@imdbID.push(result['imdbID'])
+			end
+			
+			erb :results
+
 		end
-
-		#throw error page if no results returned?
-
-		erb :results
 	end
 end
 
-get '/poster/:imdbID' do
+get '/details/:imdbID' do
 	imdbID = params[:imdbID]
 
 	details = Typhoeus.get("www.omdbapi.com", :params => {:i => params[:imdbID] })
