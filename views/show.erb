@@ -1,7 +1,33 @@
 <!--poster page-->
 
-
-
- <body>
-	<img src="@poster"/> 
+<body>
+	<div>
+		<p>
+			<img src='<%= @poster %>'/> 
+		</p>
+	</div>
+	<div>
+		<p>
+		  Rated: <%= @rating %><br></br>
+	  	Released: <%= @release %><br></br>
+	  	Runtime: <%= @runtime %><br></br>
+	  	Genre: <%= @genre %><br></br>
+	  	Director: <%= @director %><br></br>
+	  	Actors: <%= @actors %><br></br>
+	  	Plot: <%= @plot %>
+		</p>
+	</div> 
 </body>
+
+<!--
+http://localhost:4567/movie/info/tt0073195 WORKS!!
+
+
+Plot
+
+Runtime
+Genre
+Director
+Actors
+-->
+

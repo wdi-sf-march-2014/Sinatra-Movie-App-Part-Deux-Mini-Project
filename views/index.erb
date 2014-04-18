@@ -11,18 +11,10 @@
 
 	<% else @movies.each do |h|%>	
 	<li>
-	<a href='/poster/<%=["imdbID"]%>'>
+	<a href='/movie/info/<%=[":imdbID"]%>'>
 	<%=h["Title"]%> - <%=h["Year"]%><br></br></a>
 	</li>
 	<% end %>
 	<% end %>
 	</ul>
 
-<!--
-if ombd_data["Search"] == nil
-	html_str += "<h1>Sorry, we could not find that title. Try again.</h1>"
-else
-	ombd_data["Search"].each do |h|
-	html_str += "<a href='/poster/#{h["imdbID"]}'><li>#{h["Title"]} - #{h["Year"]}<br></br></li></a>"
-	end
-end -->

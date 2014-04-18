@@ -19,24 +19,28 @@ get '/results' do
 	# redirect to('/poster')
 	search = params[:movie].gsub(" ", "+")
 	results= Typhoeus.get("www.omdbapi.com/?s=#{search}")
-	ombd_data = JSON.parse(results.body)
-	# ombd_data.inspect
+	omdb_data = JSON.parse(results.body)
+	# omdb_data.inspect
 
-	@movies=ombd_data["Search"]
+	@movies=omdb_data["Search"]
 
 	erb :index
 end
 
 
-get '/poster/:imdbID' do
-	search = params[:imbdID]
+get '/movie/info/:imdbID' do
+	search = params[:imdbID]
 	results = Typhoeus.get("http://www.omdbapi.com/?i=#{params[:imdbID]}")
-  ombd_data = JSON.parse(results.body)
+  omdb_data = JSON.parse(results.body)
 
-  ombd_data.inspect
-
- # @poster=ombd_data["Poster"]
-
+ @poster=omdb_data["Poster"]
+ @rating=omdb_data["Rated"]
+ @release=omdb_data["Released"]
+ @runtime=omdb_data["Runtime"]
+ @genre=omdb_data["Genre"]
+ @director=omdb_data["Director"]
+ @actors=omdb_data["Actors"]
+ @plot=omdb_data["Plot"]
 
 erb :show
 end
