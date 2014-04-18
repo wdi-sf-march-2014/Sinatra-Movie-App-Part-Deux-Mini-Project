@@ -11,6 +11,11 @@ configure do
 end
 
 get '/' do
+
+@greeting = "Hello"
+
+#designate the view
+erb :index
 end
 
 
