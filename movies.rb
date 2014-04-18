@@ -49,7 +49,24 @@ get '/poster/:imdbID' do
 
 	details = Typhoeus.get("www.omdbapi.com", :params => {:i => params[:imdbID] })
 	details_parsed = JSON.parse(details.body)
-	@poster = details_parsed['Poster']
+
+	poster_test = details_parsed['Poster']
+
+	if poster_test == 'N/A'
+		@poster = ''
+	else
+		@poster = poster_test
+	end
+
+	@title = details_parsed['Title']
+	@plot = details_parsed['Plot']
+	@year = details_parsed['Year']
+	@rating = details_parsed['Rated']
+	@runtime = details_parsed['Runtime']
+	@genre = details_parsed['Genre']
+	@director = details_parsed['Director']
+	@actors = details_parsed['Actors']
+	@moreinfo = 'http://www.imdb.com/title/'+imdbID
 
 	erb :details
 
