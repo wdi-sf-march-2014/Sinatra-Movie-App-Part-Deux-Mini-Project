@@ -1,0 +1,40 @@
+<h3> Pick a Movie</h3>
+
+<% @movies.each do |movie| %>
+ <div class="Response">
+    <a href='/movie/<%= movie["imdbID"] %>'> 
+    <%= movie["Title"] %>
+    </a>
+</div>
+<% end %>
+    
+   
+  <a href="/"><button> Back To Movie Search </button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  str += "<div class='form'><br><a href=poster/#{movie["imdbID"]}> {movie["Title"]} - #{movie["Year"]} </a><br></div>" -->
+
+
+<!-- imdb_data["Search"].each do |h| 
+html_str += "<a href='/poster/#{h["imdbID"]}'> #{h["Title"]} - #{h["Year"]}<br></br><a>"
+end
+
+
+
+
+
+end -->

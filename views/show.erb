@@ -1,0 +1,15 @@
+
+     <!--  <%= @pic.inspect %></br> -->
+      <%= @pic["Title"] %><br>
+        Type:   <%= @pic["Type"] %><br>
+        Plot:   <%= @pic["Plot"] %><br>
+        Year:   <%= @pic["Year"] %><br>
+        Rated:  <%= @pic["Rated"] %><br>
+        Genre:  <%= @pic["Genre"]  %><br>
+        Votes:  <%= @pic["imdbVotes"] %><br>
+        Rating: <%= @pic["imdbRating"] %><br>
+        Runtime:<%= @pic["Runtime"] %><br>
+        Director<%= @pic["Director"] %><br>
+        Director<%= @pic["Poster"].to_s %><br>
+
+        <a href="/"><button> Back To Movie Search </button></a>
