@@ -1,8 +1,10 @@
 <!-- movie poster, movie info -->
-
+	<% if @results == nil %>
+		<p class="Error">Error: Movie not found!</p> 
+	<% else %> 
 	<% @results.each do |movie| %>
 		<li>
 		<a href='/show/<%=movie["imdbID"]%>'><%=movie["Title"]%> - <%=movie["Year"]%></a>
 		</li>
-
+	<% end %>
 <% end %>
