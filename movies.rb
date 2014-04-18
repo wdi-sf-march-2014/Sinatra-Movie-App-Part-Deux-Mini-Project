@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/contrib/all'
 require 'sinatra/reloader'
 require 'typhoeus'
 require 'json'
@@ -11,6 +12,19 @@ configure do
 end
 
 get '/' do
+	
+	erb :index
 end
 
+get '/search' do
+	response = Typhoeus.get("http://www.omdbapi.com", :params => { :s => params[:movie]})
+	@results = JSON.parse(response.body)["Search"]
+	erb :search
+end
 
+get '/show/:imdbID' do
+	response = Typhoeus.get("http://www.omdbapi.com", :params => { :i => params[:imdbID]})
+	@info = JSON.parse(response.body)
+	@poster = @info["Poster"]
+	erb :show
+end

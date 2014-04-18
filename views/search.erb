@@ -1,0 +1,8 @@
+<!-- movie poster, movie info -->
+
+	<% @results.each do |movie| %>
+		<li>
+		<a href='/show/<%=movie["imdbID"]%>'><%=movie["Title"]%> - <%=movie["Year"]%></a>
+		</li>
+
+<% end %>

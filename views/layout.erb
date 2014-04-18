@@ -1,9 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Your Title Here</title>
+  <title>Movie Search</title>
 </head>
 <body>
-      <%= yield  %>
+	<header>
+	<h1>Movie Search</h1>
+		<form action="/search" method="get">
+			<input type="text" name="movie" placeholder="movie title">
+			<input type="submit" value="Search">
+		</form>
+	</header>
+    <section><%= yield  %></section>
 </body>
 </html>
