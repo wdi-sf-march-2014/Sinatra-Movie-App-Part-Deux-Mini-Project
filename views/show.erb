@@ -1,14 +1,7 @@
 <!--poster page-->
 
-"<img src='#{ombd_data["Poster"]}'/>"
 
 
-get '/poster/:imdbID' do
-	search = params[:imbdID]
-	html_str = "<html><body>"
-	results = Typhoeus.get("http://www.omdbapi.com/?i=#{params[:imdbID]}")
-  ombd_data = JSON.parse(results.body)
-  html_str += "<img src='#{ombd_data["Poster"]}'/>"
-  html_str += "</body></html>"
-  return html_str
-end
+ <body>
+	<img src="@poster"/> 
+</body>

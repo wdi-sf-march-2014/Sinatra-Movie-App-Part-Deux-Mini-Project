@@ -1,7 +1,14 @@
 <!--list of results-->
 <ul>
 	<% if @movies == nil %>
-	<p>Please enter a movie title</p>
+	<p>Oops! We can't find that movie. Please search again. 
+	<form method="get" action="/results">
+	<input type="text" name="movie">
+	<input type="submit">
+	</form>
+	</p>
+
+
 	<% else @movies.each do |h|%>	
 	<li>
 	<a href='/poster/<%=["imdbID"]%>'>

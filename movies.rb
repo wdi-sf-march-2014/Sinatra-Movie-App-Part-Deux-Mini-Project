@@ -33,6 +33,11 @@ get '/poster/:imdbID' do
 	results = Typhoeus.get("http://www.omdbapi.com/?i=#{params[:imdbID]}")
   ombd_data = JSON.parse(results.body)
 
+  ombd_data.inspect
+
+ # @poster=ombd_data["Poster"]
+
+
 erb :show
 end
 
