@@ -1,11 +1,13 @@
 <!--list of results-->
 <ul>
-	<% @movies.each do |h|%>
+	<% if @movies == nil %>
+	<p>Please enter a movie title</p>
+	<% else @movies.each do |h|%>	
 	<li>
 	<a href='/poster/<%=["imdbID"]%>'>
 	<%=h["Title"]%> - <%=h["Year"]%><br></br></a>
 	</li>
-
+	<% end %>
 	<% end %>
 	</ul>
 
