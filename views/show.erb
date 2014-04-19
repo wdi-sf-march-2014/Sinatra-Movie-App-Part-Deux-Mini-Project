@@ -1,5 +1,24 @@
 <!-- This is the show poster and details view file. -->
 
-
 <img src='<%=@movie_data["Poster"]%>'/>
 
+
+
+	<h3><%= @movie_data["Title"]%></h3>
+
+	<h4>Plot: <%= @movie_data["Plot"]%></h4>
+
+	<h4>Year: <%= @movie_data["Year"]%>  Runtime: <%= @movie_data["Runtime"]%></h4>
+
+	<h4>Genre: <%= @movie_data["Genre"]%>  Rated: <%= @movie_data["Rated"]%></h4>
+
+	<h4>Director: <%= @movie_data["Director"]%></h4>
+
+	<h4>Actors: <%= @movie_data["Actors"]%></h4>
+
+
+
+
+<!-- Phase 2: On the poster display page, add more movie information. The poster page should contain the "Plot", "Released Year", "Rated", "Runtime", "Genre", "Director", and "Actors". (Optional: Add a link to the actual IMDB page). -->
+
+<!-- {"Title"=>"Memento", "Year"=>"2000", "Rated"=>"R", "Released"=>"11 Oct 2000", "Runtime"=>"113 min", "Genre"=>"Mystery, Thriller", "Director"=>"Christopher Nolan", "Writer"=>"Christopher Nolan (screenplay), Jonathan Nolan (short story \"Memento Mori\")", "Actors"=>"Guy Pearce, Carrie-Anne Moss, Joe Pantoliano, Mark Boone Junior", "Plot"=>"A man, suffering from short-term memory loss, uses notes and tattoos to hunt for the man he thinks killed his wife.", "Language"=>"English", "Country"=>"USA", "Awards"=>"Nominated for 2 Oscars. Another 47 wins & 34 nominations.", "Poster"=>"http://ia.media-imdb.com/images/M/MV5BMTc4MjUxNDAwN15BMl5BanBnXkFtZTcwMDMwNDg3OA@@._V1_SX300.jpg", "Metascore"=>"80", "imdbRating"=>"8.6", "imdbVotes"=>"609,697", "imdbID"=>"tt0209144", "Type"=>"movie", "Response"=>"True" -->
