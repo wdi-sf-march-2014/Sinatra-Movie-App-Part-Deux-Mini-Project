@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 
-
 <html>
 
 	<head>
-		<link rel="stylesheet" href="/css/style.css">
+		<!-- Include Bootstrap + Custom CSS-->
+ 		<link rel="stylesheet" type="text/css"  href="/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 		<title>Movies by Zoe</title>
 	</head>
 
 	<body>
-		<br>
+		<div class="container">
+			<div class="row">
+				<br>
 		
-		<%= yield  %>
-		
-		<br>
-		<div class="box"></div>
+				<%= yield  %>
+
+				<br>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer"><p>Background courtesy of Dreamstime Stock Photos | © Cristian Nitu</p></div>
+				<div class="box"></div>
+			</div>
+		</div>
 	</body>
-	
-	<footer>
-		Background courtesy of Dreamstime Stock Photos | © Cristian Nitu
-	</footer>
+
 </html>
