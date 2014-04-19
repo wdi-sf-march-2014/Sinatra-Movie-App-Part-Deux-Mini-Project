@@ -1,0 +1,31 @@
+Hello World
+<div onload="changeBackground()" >
+  <div id="poster">
+    <% if @poster["Poster"] == "N/A" %>
+        <h1>No Image Available</h1>
+    <% else %>
+        <img  src="<%= @poster["Poster"] %>"
+              alt="no picture on file"></div>
+  <% end %>
+  <div id="details">
+    <h2><%= @poster["Title"] %></h2>
+    <div>
+
+    </div>
+      Year: <%= @poster["Year"] %>, Rated: <%= @poster["Rated"] %>,
+      Runtime: <%= @poster["Runtime"] %></br>
+      Genre: <%= @poster["Genre"] %></br>
+      Director: <%= @poster["Director"] %></br>
+      Writer: <%= @poster["Writer"] %></br>
+      Rating: <%= @poster["imdbRating"] %></br>
+      Votes: <%= @poster["imdbVotes"] %></br>
+      Type: <%= @poster["Type"] %></br>
+      Plot: <%= @poster["Plot"] %></br>
+    </div>
+
+<!--  <button onclick="changeBackground()" >Run JS</button> -->
+  <div>
+      </br>
+      <a href="/"><button >Movie Search</button></a>
+  </div>
+</div>

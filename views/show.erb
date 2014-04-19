@@ -1,6 +1,11 @@
-<h1>Results</h1>
-<ul>
-	<li><%= @title %></li>
-	<li><%= @year  %></li>
-	<li><%= @id   %></li>
-</ul>
+<h2>Select a Movie</h2>
+<div>
+  <% @result.each do |movie| %>
+      <div ><a class="list" href="/movie_info/<%= movie['imdbID']  %>" > <%= movie["Title"] %> </a></div>
+  <% end %>
+</div>
+<div>
+</br>
+  <a href="/"><button>Movie Search</button></a>
+</div>
+
