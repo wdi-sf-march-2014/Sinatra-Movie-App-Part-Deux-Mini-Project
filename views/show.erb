@@ -1,19 +1,22 @@
 
      <!--  <%= @pic.inspect %></br> -->
-     <div id"info4">
-     
-      <img src = <%= @pic["Poster"] %> />
-      <%= @pic["Title"] %>
-      <ul id="info">
-       <li class="hover"> Type:   <%= @pic["Type"] %></li>
-       <li class="hover"> Plot:   <%= @pic["Plot"] %></li>
-       <li class="hover"> Year:   <%= @pic["Year"] %></li>
-       <li class="hover"> Rated:  <%= @pic["Rated"] %></li>
-       <li class="hover"> Genre:  <%= @pic["Genre"]  %></li>
-       <li class="hover"> Votes:  <%= @pic["imdbVotes"] %></li>
-       <li class="hover"> Rating: <%= @pic["imdbRating"] %></li>
-       <li class="hover"> Runtime: <%= @pic["Runtime"] %></li>
-       <li class="hover"> Director <%= @pic["Director"] %></li>
+      <h1 class="animated @keyframes rotateIn"><%= @pic["Title"] %></h1>
+   
+    <ul id="info">
+       <img src = <%= @pic["Poster"] %> />
+      
+      
+      <div class = "plot"><li class="hover"> Plot:   <%= @pic["Plot"] %></li></div><br>
+        <div class="info">
+       <li class="hover"> Type:   <%= @pic["Type"] %></li><br>
+       <li class="hover"> Year:   <%= @pic["Year"] %></li><br>
+       <li class="hover"> Rated:  <%= @pic["Rated"] %></li><br>
+       <li class="hover"> Genre:  <%= @pic["Genre"]  %></li><br>
+       <li class="hover"> Votes:  <%= @pic["imdbVotes"] %></li><br>
+       <li class="hover"> Rating: <%= @pic["imdbRating"] %></li><br>
+       <li class="hover"> Runtime: <%= @pic["Runtime"] %></li><br>
+       <li class="hover"> Director <%= @pic["Director"] %></li><br>
          </ul>
-        <a href="/"><button> Back To Movie Search </button></a>
+        <a href="/"><button class="sub"> Back To Movie Search </button></a>
         </div>
+       
