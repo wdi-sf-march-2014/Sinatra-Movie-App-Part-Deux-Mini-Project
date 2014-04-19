@@ -1,0 +1,52 @@
+body {
+	background: #c0392b
+}
+div {
+	margin-top: 300px
+}
+#search_results {
+	/*background-color: #2980b9;*/
+	margin-top: 0px;
+}
+h1 {
+	text-align: center;
+	font-family: arial black;
+	color: #16a085;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+li {
+	font-size: 20px;
+	font-style: arial;
+	text-align: center;
+	list-style-type: none;
+
+}
+form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 300;
+	width: 220px;
+}
+#submit {
+	padding: 0;
+	box-shadow: 1px 1px 17px #888888
+}
+img {
+	border-radius: 5px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+}
+a:hover {
+	font-size: 35px;
+}
+#title {
+	font-size: 30px;
+}

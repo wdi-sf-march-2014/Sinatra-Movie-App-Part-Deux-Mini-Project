@@ -8,6 +8,12 @@ describe "Sinatra Movie Application With OMDB API" do
       last_response.should be_ok
     end
   end
+  describe "Search Results" do
+  	it "should return results for frozen" do
+  		get '/results?movie=frozen'
+  		last_response.should be_ok
+   end		
+  end
 
-  
+
 end
