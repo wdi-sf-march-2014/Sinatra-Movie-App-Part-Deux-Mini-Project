@@ -1,3 +1,4 @@
+
 require 'sinatra'
 require 'sinatra/reloader'
 require 'typhoeus'
@@ -11,6 +12,30 @@ configure do
 end
 
 get '/' do
+	erb:search
 end
+
+
+get '/results' do
+
+	search = params[:movie]
+	#.gsub(" ", "+")
+
+		results= Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
+		@omdb_data = JSON.parse(results.body)
+		
+	erb :index
+end
+
+get '/poster/:imdbID' do
+
+	imdb_id = params[:imdbID]
+
+	new_results = Typhoeus.get("www.omdbapi.com/?i=#{imdb_id}")
+	@imdb_poster= JSON.parse(new_results.body)
+	
+erb :show
+end
+
 
 

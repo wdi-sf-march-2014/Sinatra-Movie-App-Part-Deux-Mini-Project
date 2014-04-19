@@ -1,0 +1,8 @@
+<%@omdb_data["Search"].each do |h| %>
+
+<li>
+ <a href='/poster/<%=h["imdbID"]%>'> 
+ <%= h["Title"]%> - <%= h["Year"]%>
+</li>
+
+	<% end %>
