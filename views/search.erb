@@ -1,0 +1,28 @@
+<!DOCTYPE html}
+
+<html>
+  <head>
+  	<h1> Dave's Test Page </h1>
+  </head>
+
+
+<body>
+
+<% @movies.each do |x| %>
+
+<ul>
+		<li>
+		<%= title = x["Title"] %>
+		<%= year = x["Year"] %>
+		<%= id = x["imdbID"] %> 
+	</li>
+</ul> 
+<% end %>
+
+
+
+
+</body>
+</html>
+
+
