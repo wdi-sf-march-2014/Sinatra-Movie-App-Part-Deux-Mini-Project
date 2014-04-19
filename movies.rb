@@ -18,12 +18,12 @@ end
 
 get '/results' do
 
-	search = params[:movie]
-	#.gsub(" ", "+")
+	search = params[:movie].gsub(" ", "+")
+	
 
 		results= Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
-		@omdb_data = JSON.parse(results.body)
-		
+		omdb_data = JSON.parse(results.body)
+		@movies=omdb_data["Search"]
 	erb :index
 end
 
@@ -33,8 +33,10 @@ get '/poster/:imdbID' do
 
 	new_results = Typhoeus.get("www.omdbapi.com/?i=#{imdb_id}")
 	@imdb_poster= JSON.parse(new_results.body)
+
 	
-erb :show
+	
+	erb :show
 end
 
 

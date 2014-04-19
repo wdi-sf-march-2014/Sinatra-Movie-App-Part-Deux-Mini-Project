@@ -1,8 +1,8 @@
-<%@omdb_data["Search"].each do |h| %>
+<%@movies.each do |h| %>
 
-<li>
- <a href='/poster/<%=h["imdbID"]%>'> 
- <%= h["Title"]%> - <%= h["Year"]%>
-</li>
+<li class="movie_list"><a href='/poster/<%=h["imdbID"]%>'> <%= h["Title"]%> - <%= h["Year"]%></li>
 
-	<% end %>
+
+	 <% end %> 
+
+	
