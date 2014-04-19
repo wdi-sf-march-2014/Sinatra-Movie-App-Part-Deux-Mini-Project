@@ -10,16 +10,17 @@ configure do
 end
 
 get '/' do
- if params["movie"] == ""
-  redirect "/"
-end
+ 
 erb:search
 end
 
 get '/results' do
+  if params["movie"] == ""
+  redirect "/"
+end
   res = Typhoeus.get("www.omdbapi.com/", 
   :params => { :s => params["movie"]}) 
-  @movies = JSON.parse(res.body) ["Search"]
+  @movies = JSON.parse(res.body)["Search"]
    
    erb :index
 end
@@ -29,7 +30,7 @@ get '/movie/:imdbID' do
   res=Typhoeus.get("www.omdbapi.com/", 
     :params => { :i => params["imdbID"] })
   @pic = JSON.parse(res.body)
-  @temp = pic.inspect
+  # @temp = pic.inspect
   
 
 

@@ -1,15 +1,19 @@
 
      <!--  <%= @pic.inspect %></br> -->
-      <%= @pic["Title"] %><br>
-        Type:   <%= @pic["Type"] %><br>
-        Plot:   <%= @pic["Plot"] %><br>
-        Year:   <%= @pic["Year"] %><br>
-        Rated:  <%= @pic["Rated"] %><br>
-        Genre:  <%= @pic["Genre"]  %><br>
-        Votes:  <%= @pic["imdbVotes"] %><br>
-        Rating: <%= @pic["imdbRating"] %><br>
-        Runtime:<%= @pic["Runtime"] %><br>
-        Director<%= @pic["Director"] %><br>
-        Director<%= @pic["Poster"].to_s %><br>
-
+     <div id"info4">
+     
+      <img src = <%= @pic["Poster"] %> />
+      <%= @pic["Title"] %>
+      <ul id="info">
+       <li class="hover"> Type:   <%= @pic["Type"] %></li>
+       <li class="hover"> Plot:   <%= @pic["Plot"] %></li>
+       <li class="hover"> Year:   <%= @pic["Year"] %></li>
+       <li class="hover"> Rated:  <%= @pic["Rated"] %></li>
+       <li class="hover"> Genre:  <%= @pic["Genre"]  %></li>
+       <li class="hover"> Votes:  <%= @pic["imdbVotes"] %></li>
+       <li class="hover"> Rating: <%= @pic["imdbRating"] %></li>
+       <li class="hover"> Runtime: <%= @pic["Runtime"] %></li>
+       <li class="hover"> Director <%= @pic["Director"] %></li>
+         </ul>
         <a href="/"><button> Back To Movie Search </button></a>
+        </div>

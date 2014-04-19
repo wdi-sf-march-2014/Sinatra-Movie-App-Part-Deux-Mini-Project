@@ -1,15 +1,14 @@
-<h3> Pick a Movie</h3>
-
+<h1 class="animated @keyframes flip"> Pick a Movie</h1>
 <% @movies.each do |movie| %>
  <div class="Response">
-    <a href='/movie/<%= movie["imdbID"] %>'> 
-    <%= movie["Title"] %>
-    </a>
-</div>
+  <a href='/movie/<%= movie["imdbID"] %>'> <ul>
+  <li class="animated @keyframes rotateIn"><%= movie["Title"] %></li>
+  </ul>
+  </a>
+ </div>
 <% end %>
-    
-   
-  <a href="/"><button> Back To Movie Search </button></a>
+ 
+ <a href="/"><button> Back To Movie Search </button></a>
 
 
 
