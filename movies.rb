@@ -15,16 +15,22 @@ get '/' do
 	erb :index
 	end
 
-
-get '/search' do
 	
+get '/search' do	
+	# binding.pry
  	search = Typhoeus.get("www.omdbapi.com", :params => {:s => params[:movie]})
  	result = JSON.parse(search.body)
  	@movies = result["Search"]
-	erb :Search
+
+	erb :search
 	end
 
-
+get '/show/:id' do
+	# binding.pry
+	search = Typhoeus.get("www.omdbapi.com", :params => {:i => params[:id]})
+	@movie= JSON.parse(search.body)
+	erb :show
+	end
 
 
 # <%= search = Typhoeus.get("www.omdbapi.com", :params => {:i => id}) %>

@@ -1,28 +1,25 @@
-<!DOCTYPE html}
-
-<html>
-  <head>
-  	<h1> Dave's Test Page </h1>
-  </head>
 
 
-<body>
 
-<% @movies.each do |x| %>
+
+<%= @movies.inspect %>
 
 <ul>
-		<li>
-		<%= title = x["Title"] %>
-		<%= year = x["Year"] %>
-		<%= id = x["imdbID"] %> 
-	</li>
-</ul> 
+	
+<% @movies.each do |movie| %>
+
+<a href='/show/<%= movie["imdbID"] %>' >
+
+<li>
+		<%= title = movie["Title"] %>
+		<%= year = movie["Year"] %>
+		<%= id = movie["imdbID"] %> 
+</li>
+
+</a>
+
 <% end %>
 
-
-
-
-</body>
-</html>
+</ul> 
 
 
