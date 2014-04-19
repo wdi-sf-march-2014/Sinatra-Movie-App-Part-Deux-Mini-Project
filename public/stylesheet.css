@@ -1,0 +1,25 @@
+h1 {
+
+	color: black;
+	font-size: 100px;
+	text-align: center;
+	margin-top: 2em;
+}
+
+body {
+	color:black;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 20px;
+	background: url(http://i.imgur.com/aCraf7O.jpg);
+	background-repeat: no-repeat;
+}
+
+li {
+	font-size: 20px;
+	font-family: georgia;
+	text-align: left;
+	color: blue;
+	font-weight: bold;
+}
+

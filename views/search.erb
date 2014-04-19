@@ -1,0 +1,10 @@
+<!-- array here -->
+<body> <% @movies.each do |item| %>
+		<li>
+			<a href='/poster/<%=item["imdbID"]%>'>
+			<%=item["Title"]%> - <%=item["Year"]%><br><br></a>
+		</li>
+
+			
+<% end %>
+</body>
