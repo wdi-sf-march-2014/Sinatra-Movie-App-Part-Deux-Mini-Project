@@ -16,11 +16,9 @@ erb :search
 end
 
 get '/results' do
-	# redirect to('/poster')
 	search = params[:movie].gsub(" ", "+")
 	results= Typhoeus.get("www.omdbapi.com/?s=#{search}")
 	omdb_data = JSON.parse(results.body)
-	# omdb_data.inspect
 
 	@movies=omdb_data["Search"]
 
