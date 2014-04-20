@@ -1,14 +1,18 @@
 <h1 class="animated @keyframes flip"> Pick a Movie</h1>
+
+
 <% @movies.each do |movie| %>
  <div class="Response">
-  <a href='/movie/<%= movie["imdbID"] %>'> <ul>
+  <a href='/movie/<%= movie["imdbID"] %>'>
+   <ul>
   <li class="@-webkit-keyframes buzz "><%= movie["Title"] %></li>
+  
   </ul>
   </a>
  </div>
 <% end %>
  
- <a href="/"><button> Back To Movie Search </button></a>
+ <a href="/"><button id="sub"> Back To Movie Search </button></a>
 
 
 
@@ -24,16 +28,3 @@
 
 
 
-<!-- 
-  str += "<div class='form'><br><a href=poster/#{movie["imdbID"]}> {movie["Title"]} - #{movie["Year"]} </a><br></div>" -->
-
-
-<!-- imdb_data["Search"].each do |h| 
-html_str += "<a href='/poster/#{h["imdbID"]}'> #{h["Title"]} - #{h["Year"]}<br></br><a>"
-end
-
-
-
-
-
-end -->

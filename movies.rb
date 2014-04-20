@@ -30,7 +30,7 @@ get '/movie/:imdbID' do
   res=Typhoeus.get("www.omdbapi.com/", 
     :params => { :i => params["imdbID"] })
   @pic = JSON.parse(res.body)
-  # @temp = pic.inspect
+  
   
 erb :show
 end

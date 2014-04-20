@@ -1,15 +1,17 @@
 h1 {
   color: rgb(180, 170, 170);
-  font-family:CabinSketch ;
+  font-family: Cabin Sketch, cursive;
   text-align: center;
   font-size: 75px;
   }
+
 p {
   color: rgb(180, 170, 170);
-  font-family:CabinSketch ;
+  font-family:Cabin Sketch, cursive ;
   text-align: center;
   font-size: 45px;
 }
+
 body {
   background-image: url("http://ak8.picdn.net/shutterstock/videos/3937400/preview/stock-footage-old-silent-film-style-text-frame-film-projector-flickering-background-hd.jpg");
   background-size: cover;
@@ -18,28 +20,32 @@ body {
   }
 .butfor {
    margin-top: 50px;
+  }
 
-}
- .plot {
-   max-height: 500px;
-   max-width: 500px;
+.plot {
+   /*max-height: 500px;
+   max-width: 500px;*/
    float: right;
    margin-right: 266px;
-   height: 250px;
+   min-height: 100px;
+
    width: 496px;
    /*background-color: rgba(0, 0, 0, 0.5 ); */
-   border: solid 4px  yellow;
+   border: solid 4px  rgb(74, 121, 122);
   }
+
 .info {
   background-color: rgba(0, 0, 0, 0.5 ); 
   width:600px;
+  margin-left: 370px;
+  text-align: center;
   }
 #button {
   background-color: rgb(0, 0, 0, 0.5 );
   padding: 15px 100px;
   box-shadow: 1px 1px 20px 1px;
-  color:black;
-  text-color: black;
+  background-color: rgb(219, 204, 204);
+  color: black;
 }
 #sub {
   padding: 14px 77px;
@@ -48,8 +54,19 @@ body {
   border-color: rgb(74, 121, 122);
   border-radius: 10px 10px 10px 10px;
   }
+
+  #sub1 {
+  padding: 14px 77px;
+  box-shadow: 1px 1px 20px 1px;
+  background-color: rgb(74, 121, 122);
+  border-color: rgb(74, 121, 122);
+  border-radius: 10px 10px 10px 10px;
+  float: right;
+  }
+
   a {
-  text-decoration: none; 
+  text-decoration: none;
+   text-align: center;
   }
   .backbut {
     float:right;
@@ -59,12 +76,16 @@ body {
   text-decoration: none; 
   color: rgb(180, 170, 170);
   font-size: 30px;
-  font-family: Quicksand;
-  text-align: center;
+  font-family: Quicksand, sans-serif;
+  
   }
   
 img {
   display:inline-block;
+  margin-left: 161px;
+  min-height: 450px;
+  max-height: 450px;
+   max-width: 400px;
 }
 /*footer {
   height: 80px;
