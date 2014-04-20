@@ -1,8 +1,17 @@
 <!-- movie poster, movie info -->
-<img class="poster" src='<%= @info["Poster"] %>' />
-<ul>
-	<li><strong><%= @info["Title"] %></strong> (<%= @info["Year"] %>)</li>
-	<li><span class="info"><strong><%= @info["Rated"] %></strong>	 <%= @info["Runtime"] %><span class="genre"><%= @info["Genre"].gsub(", ", " | ") %></span></span></li>
-	<li class="plot"><%= @info["Plot"] %></li>
-	<li>Directed by <%= @info["Director"] %></li>
-</ul>
+<div class="detail_top">
+	<div class="poster">
+		<img id="poster" src='<%= @info["Poster"] %>' />
+	</div>
+	<div class="title">
+			<p><strong><%= @info["Title"] %></strong> (<%= @info["Year"] %>)</p>
+	</div>
+</div>
+</section class="detail_bottom">
+		<ul>
+			<li><span class="info"><strong><%= @info["Rated"] %></strong><%= @info["Runtime"] %><span class="genre"><%= @info["Genre"].gsub(", ", " | ") %></span></span>
+			</li>
+			<li class="plot"><%= @info["Plot"] %></li>
+			<li>Directed by <%= @info["Director"] %></li>
+		</ul>
+</section>

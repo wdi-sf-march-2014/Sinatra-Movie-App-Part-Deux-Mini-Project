@@ -3,16 +3,22 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<link rel="stylesheet/less" type="text/css" href="/stylesheets/style.less">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
   <title>Movie Search</title>
 </head>
 <body>
+	<header>
 		<a class="title" href="/"><h1>Movie Search</h1></a>
-		<div class="search_bar">
+		<section class="search_bar">
 			<form action="/results" method="get">
 				<input type="text" name="movie" placeholder="movie title" value="<%= params[:movie] %>">
 				<input type="submit" value="Search">
 			</form>
-		</div>
-    <section class="content"><%= yield  %></section>
+		</section>
+	</header>
+  <main class="main">
+  	<%= yield  %>
+  </main>
 </body>
 </html>
