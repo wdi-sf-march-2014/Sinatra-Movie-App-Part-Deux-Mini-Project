@@ -20,9 +20,11 @@ get '/results' do
 	omdb_data = JSON.parse(results.body)
 
 	movies=omdb_data["Search"]
-	@movies_with_posters=movies.map do |movie|
-		movie_with_poster = Typhoeus.get("http://www.omdbapi.com/?i=#{movie['imdbID']}")
-		JSON.parse(movie_with_poster.body)	
+	if movies 
+		@movies_with_posters = movies.map do |movie|
+			movie_with_poster = Typhoeus.get("http://www.omdbapi.com/?i=#{movie['imdbID']}")
+			JSON.parse(movie_with_poster.body)	
+		end
 	end
 
 	erb :index

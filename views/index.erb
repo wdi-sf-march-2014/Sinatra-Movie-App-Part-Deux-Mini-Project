@@ -1,14 +1,7 @@
 <!--list of results-->
 <ul>
-	<% if @movies_with_posters == nil %>
-		<p> Sorry, movie not found. Try again! 
-		<form method="get" action="/results">
-		<input type="text" name="movie">
-		<input type="submit">
-		</form>
-	<% else %>
-		<% @movies_with_posters.each_with_index do |movie, index|%>
-
+	<% if @movies_with_posters %>
+		<% @movies_with_posters.each do |movie|%>
 			<div class="col-lg-4 col-md-4 col-sm-4">
 			  <a href='/info/<%=movie["imdbID"]%>'>
 			  	<div class="poster">
@@ -20,5 +13,15 @@
 				</a>
 			</div>
 		<% end %>
+	<% else %>
+	<div class="search_form">
+		<p class="white"><I>Sorry, film ferret came back empty handed. Try again!</I></p> 
+		<br>
+		<form method="get" action="/results">
+			<input class="search_box" type="text" name="movie">
+			<br>
+			<input class="btn" type="submit">
+		</form>
+	</div>
 	<% end %>
 </ul>
