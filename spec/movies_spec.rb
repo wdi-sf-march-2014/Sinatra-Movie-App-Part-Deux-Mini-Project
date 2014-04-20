@@ -9,5 +9,12 @@ describe "Sinatra Movie Application With OMDB API" do
     end
   end
 
+  # describe "Results page" do
+  # 	it "should allow accessing to the search page" do
+  # 		get '/results'
+  # 		last_response.should be_ok
+  # 	end
+  # end
+
   
 end

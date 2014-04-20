@@ -1,0 +1,29 @@
+<h1>Movie Info</h1>
+
+
+<table>
+	<tr>
+		<td>
+			<%if @poster != "N/A"%>
+			<img src = <%=@poster%>></img > 
+			<%end%>
+		</td>
+		<td>
+			<ul class="popcorn">
+				<li>Title: <%= @result["Title"]%></li>
+				<li>Year Released: <%= @result["Year"]%></li>
+				<li>Rated: <%= @result["Rated"]%></li>
+				<li>Runtime: <%= @result["Runtime"]%></li>
+				<li>Genre: <%= @result["Genre"]%></li>
+				<li>Director: <%= @result["Director"]%></li>
+				<li>Plot:  <%= @result["Plot"]%></li>
+				<li>Actors: <%= @result["Actors"]%></li>
+			</ul>
+			<form method="get" action="/">
+			<input type="submit" value="Search Again!"> 
+		</td>
+	</tr>
+</table>
+
+
+<img src= ../images/catsnacks.jpg>
