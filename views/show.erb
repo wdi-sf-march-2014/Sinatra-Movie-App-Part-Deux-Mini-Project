@@ -9,7 +9,21 @@
 
 
 	<body>
-		<%= @movie_list %>
+		
+
+		<img src="<%= @pic['Poster'] %>">
+		<ul>
+			<li> <%= @pic["Plot"] %> </li>
+			<li> <%= @pic["Released"] %> </li>
+			<li> <%= @pic["Rated"] %> </li>
+			<li> <%= @pic["Runtime"] %> </li>
+			<li> <%= @pic["Genre"] %> </li>
+			<li> <%= @pic["Director"] %> </li>
+			<li> <%= @pic["Actors"] %> </li>
+
+
+
+		</ul>
 
 	</body>
 
