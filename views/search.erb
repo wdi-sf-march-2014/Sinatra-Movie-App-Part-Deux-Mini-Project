@@ -1,0 +1,21 @@
+<div class="main">
+
+<header>
+  <h2>Search Results</h2>
+</header>
+
+
+<table>
+  <% @movies.each do |movie| %>
+  	<tr>
+ 		<td><a href='/movies/<%= movie["imdbID"]%>'> <%= movie["Title"]%>(<%= movie['Year']%>)</a></td>
+  	</tr>
+  <% end %>
+</table>
+</div>
+
+
+
+<footer>
+	<p><a href="/">Search Again</p>
+</footer>

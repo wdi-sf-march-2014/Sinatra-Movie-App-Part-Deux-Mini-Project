@@ -1,0 +1,32 @@
+<div class="main">
+<header>
+  <h1><u><%= @title %> (<%= @year %>)</u></h1>
+  <h2><u><%= @genre %></u></h2>
+</header>
+
+
+	<% if @poster != 'N/A' %>
+    <figure id="poster">
+      <img src="<%= @poster %>">
+    </figure>
+    <% else %>
+      <p>No Poster Availble</p>
+    <% end %>
+
+ 
+  <p><%= @plot%> </p>
+  <p><strong>Directors:</strong> <%= @director %><br />
+  <strong>Starring:</strong> <%= @actors %></p>
+  
+  <p><strong>Released:</strong> <%= @released %><br />
+    <strong>Runtime:</strong> <%= @runtime %><br />
+    <strong>Rated:</strong> <%= @rated %></p>
+    
+  <p><strong>IMDb Rating:</strong> <%= @rating %><br />
+
+</div> 
+<br />
+
+<class=footer>
+  <p><a href="/">Search Again</p>
+</footer>
