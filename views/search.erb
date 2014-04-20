@@ -1,0 +1,7 @@
+<div class="search">
+<% @movies.each do |movie| %>
+<a href='/movies/<%= movie["imdbID"]%>'> <%= movie["Title"]%> <%= movie["Year"]%> </a><br />
+<%end%>
+<br />
+<a href='/'><button>Back to Movie Seach</button></a>
+</div>
