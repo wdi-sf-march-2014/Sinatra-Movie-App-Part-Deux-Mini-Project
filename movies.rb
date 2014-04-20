@@ -11,7 +11,7 @@ configure do
 end
 
 get '/' do
-erb :search
+	erb :search
 end
 
 get '/results' do
@@ -20,8 +20,7 @@ get '/results' do
 	omdb_data = JSON.parse(results.body)
 
 	@movies=omdb_data["Search"]
-
-erb :index
+	erb :index
 end
 
 get '/info/:imdbID' do
@@ -37,6 +36,5 @@ get '/info/:imdbID' do
 	@director=@omdb_data["Director"]
 	@actors=@omdb_data["Actors"]
 	@plot=@omdb_data["Plot"]
-
-erb :show
+	erb :show
 end

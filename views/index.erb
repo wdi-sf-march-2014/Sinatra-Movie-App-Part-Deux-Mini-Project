@@ -1,18 +1,20 @@
 <!--list of results-->
 <ul>
-	<% if @movies.each == nil %>
+	<% if @movies == nil %>
 		<p> Sorry, movie not found. Try again! 
 		<form method="get" action="/results">
-		<input type="text" name="movie" 
+		<input type="text" name="movie">
+		<input type="text" name="movie">
 		<input type="submit">
 		</form>
 	<% else %>
 	<% @movies.each do |mov|%>
-		<li>
-			<a href='/info/<%="imdbID"%>'>
+		<ul>
+			<a href='/info/<%=mov["imdbID"]%>'>
 				<%=mov["Title"]%> (<%=mov["Year"]%>)<br></br>
 			</a>
-		</li>
+		</ul>
 	<% end %>
 		<% end %>
 </ul>
+
