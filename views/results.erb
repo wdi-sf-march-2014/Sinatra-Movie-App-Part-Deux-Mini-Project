@@ -1,12 +1,12 @@
 <!-- list of movies returned by search -->
 <% if @results == nil %>
 	<p class="error">Error: Movie not found!</p> 
-<% else %> 
+<% else %>
+	<section class="list"> 
+		<ul>
 	<% @results.each do |movie| %>
-		<section class="list">
-			<li>
-				<a href='/detail/<%=movie["imdbID"]%>'><%=movie["Title"]%> - <%=movie["Year"]%></a>
-			</li>
-		</section>
+			<li class="list_item"><a href='/detail/<%=movie["imdbID"]%>'><strong><%=movie["Title"]%></strong> (<%=movie["Year"]%>)</a></li>
 	<% end %>
+		</ul>
+	</section>
 <% end %>
