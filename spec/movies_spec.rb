@@ -17,10 +17,10 @@ describe "Sinatra Movie Application With OMDB API" do
 	      last_response.should be_ok
 	    end
 
-	    # it "should show a page when no search terms are entered" do
-	    #   get '/results'
-	    #   last_response.should be_ok
-	    # end
+	    it "should show a page when no search terms are entered" do
+	      get '/'
+	      last_response.should be_ok
+	    end
 
 	    it "should return Forbidden Planet as a search result when it is searched for" do
 	      get '/results?movie=Forbidden%20Planet'

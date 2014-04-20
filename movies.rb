@@ -40,36 +40,20 @@ end
 # end
 
 get '/results' do
-	search = params[:movie]
-	search = search.gsub(/\s/, "%20")
-	results= Typhoeus.get("www.omdbapi.com/?s=#{search}")
-	@omdb_data = JSON.parse(results.body)
-	erb :search
+	if params[:movie] == ""
+		erb :index
+	else
+		search = params[:movie]
+		search = search.gsub(/\s/, "%20")
+		results= Typhoeus.get("www.omdbapi.com/?s=#{search}")
+		@omdb_data = JSON.parse(results.body)
+		erb :search
+	end
 end
 
 get '/poster/:imdbID' do
-	search = params[:imbdID]
 	results = Typhoeus.get("http://www.omdbapi.com/?i=#{params[:imdbID]}")
   	@movie_data = JSON.parse(results.body)
   	erb :show
 end
-
-
-# get '/poster/:imdbID' do
-# 	search = params[:imbdID]
-# 	html_str = "<html><body>"
-# 	results = Typhoeus.get("http://www.omdbapi.com/?i=#{params[:imdbID]}")
-#   ombd_data = JSON.parse(results.body)
-#   html_str += "<img src='#{ombd_data["Poster"]}'/>"
-#   html_str += "</body></html>"
-#   return html_str
-# end
-
-
-
-
-
-
-# # TODO: Add another get here for the poster url.  The path for the poster
-# # should look like this example '/poster/tt2724064'
 
