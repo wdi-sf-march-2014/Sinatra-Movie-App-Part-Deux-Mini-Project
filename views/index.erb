@@ -1,19 +1,24 @@
 <!--list of results-->
 <ul>
-	<% if @movies == nil %>
+	<% if @movies_with_posters == nil %>
 		<p> Sorry, movie not found. Try again! 
 		<form method="get" action="/results">
 		<input type="text" name="movie">
 		<input type="submit">
 		</form>
 	<% else %>
-	<% @movies.each do |mov|%>
-		<li>
-			<a href='/info/<%=mov["imdbID"]%>'>
-				<%=mov["Title"]%> (<%=mov["Year"]%>)<br></br>
-			</a>
-		</li>
-	<% end %>
-		<% end %>
-</ul>
+		<% @movies_with_posters.each_with_index do |movie, index|%>
 
+			<div class="col-lg-4 col-md-4 col-sm-4">
+			  <a href='/info/<%=movie["imdbID"]%>'>
+			  	<div class="poster">
+						<img src="<%= movie['Poster'] %>" class="img-responsive">
+						<li>
+							<%=movie["Title"]%> (<%=movie["Year"]%>)
+						</li>
+					</div>
+				</a>
+			</div>
+		<% end %>
+	<% end %>
+</ul>

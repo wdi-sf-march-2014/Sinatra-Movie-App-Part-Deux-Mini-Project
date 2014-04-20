@@ -26,10 +26,47 @@ body {
 }
 
 #content {
-
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	padding-top: 20px;
 }
 
 #poster {
 	border: 8px double black;
 	background-color: red;
 }
+.poster{
+	height:350px;
+	padding:10px;
+	margin-bottom:10px;
+	background-color: white;
+}
+.poster img{
+	border-bottom: 1px solid #777;
+	padding-bottom: 8px;
+	margin-bottom:10px;
+	width:170px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200) {
+
+}
+
+
+
+
+
+
+
+
+
