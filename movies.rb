@@ -42,6 +42,7 @@ get '/poster/:imdbID' do
 	@genre = @omdb_data["Genre"]
 	@director = @omdb_data["Director"]
 	@actors = @omdb_data["Actors"]
+	@link = "http://www.imdb.com/title/#{params["imdbID"]}"
   erb :show
 end
 

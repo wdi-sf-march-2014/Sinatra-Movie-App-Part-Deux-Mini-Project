@@ -1,14 +1,13 @@
-<!-- includes the array...parsed JSON data?? -->
+<!-- Search results: bulleted list of possible movies-->
 
 
-<ul>
+<h3>For your search of <i><%= params[:movie].upcase %></i>, we found:</h3>
+<br></br>
 	<% @omdb_data.each do |movie| %>
-	<li>
 		<a href='/poster/<%=movie["imdbID"]%>'>
 		<%=movie["Title"]%> - <%=movie["Year"]%><br></br></a>
-	</li>
-
 	<% end %>
-</ul>
+
+</div>
 
 

@@ -1,14 +1,32 @@
 <!-- shows the poster (Phase 2 -->
-<!-- The poster page should contain the "Plot", "Released Year", "Rated", "Runtime", "Genre", "Director", and "Actors". (Optional: Add a link to the actual IMDB page). -->
+<!-- The poster page s contain the "Plot", "Released Year", "Rated", "Runtime", "Genre", "Director", and "Actors". (Optional: Add a link to the actual IMDB page). -->
 
 <img src='<%=@poster%>'/><br></br>
 
-<ul>
-	<li> <%=@plot%></li><br></br>
-	<li> <%=@released%></li><br></br>
-	<li> <%=@rated%></li><br></br>
-	<li> <%=@runtime%></li><br></br>
-	<li> <%=@genre%></li><br></br>
-	<li> <%=@director%></li><br></br>
-	<li> <%=@actors%></li><br></br>
-</ul>
+
+
+
+ <h4><strong> Plot: </strong> <%=@plot%> </h4>
+
+ <p>
+
+ <strong> Release Date: </strong> <%=@released%> 
+ <br></br>
+
+ <strong> Rating: </strong> <%=@rated%> 
+ <br></br>
+
+ <strong> Runtime: </strong> <%=@runtime%> 
+ <br></br>
+
+ <strong> Genre: </strong> <%=@genre%> 
+ <br></br>
+
+ <strong> Directed By: </strong> <%=@director%> 
+ <br></br>
+
+ <strong> Starring: </strong> <%=@actors%> 
+ <br></br>
+
+<a href='<%= @link %>'>Click here to see <%= @omdb_data["Title"] %> on IMDB</a>
+ </p>

@@ -4,18 +4,21 @@
 
 <html>
 <header>
-	<h1>Movie Search!</h1>
+	<h2>Chewbacca says you want to research a movie!</h2>
 </header>
 
 <body>
-	<p>Search for a movie:</p>
-
+	You can do that right here:<br></br>
+	<div class="form">
 	<form method="get" action="/results">
 	<input type="text" name="movie" placeholder="Title or IMDB number">
-	<input type="submit">
+	<input type="submit" class="btn btn-sm btn-danger"></button>
 	</form>
+	</div>
+	<br></br>
 
-	<p><img src="<%=@image_url%>"/></p>
+	
+	<img src="<%=@image_url%>"/>
 
 	</body>
 
