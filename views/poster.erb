@@ -1,20 +1,23 @@
-<!-- poster page -->
-<img src="<%=@poster%>"
-<ul>
-	<br></br>
-	<%=@plot%>
-	<br></br>
-	<%=@release%>
-	<br></br>
-	<%=@rated%>
-	<br></br>
-	<%=@runtime%>
-	<br></br>
-	<%=@genre%>
-	<br></br>
-	<%=@director%>
-	<br></br>
-	<%=@actor%>
-	<br></br>
-</ul>
-<a href="http://www.imdb.com/title/<%=@search%>">Check out this film's IMDB page!</a>
+
+<html>
+<head><link rel="stylesheet" href="/public/pages/poster.css"></head>
+
+<center><img src="<%=@picture['Poster']%>" alt="" class="imgframe"/></center>
+<h4><a href="http://www.imdb.com/title/<%=@search %>" target="_blank" id="imdb-icon"><img title="IMDB" src="http://www.kevinbishopentertainment.com/images/imdb.png" alt="IMDB" width="72" height="72" /></a></h4>
+<div class="container-fluid">
+
+		<ul class="list-group">
+			<li class="list-group-item">Plot: <%=@plot%></li>
+			<li class="list-group-item">Release Date: <%=@release%></li>
+			<li class="list-group-item">Rating: <%=@rated%></li>
+			<li class="list-group-item">Runtime: <%=@runtime%></li>
+			<li class="list-group-item">Genre: <%=@genre%></li>
+			<li class="list-group-item">Director: <%=@director%></li>
+			<li class="list-group-item">Cast: <%=@actor%></li>
+			
+		</ul>
+
+</div>
+<footer>
+</footer>
+</html>

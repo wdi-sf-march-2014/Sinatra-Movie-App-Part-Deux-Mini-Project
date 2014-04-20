@@ -1,12 +1,98 @@
-<!doctype html>
-<html>
-<head>
-	<link rel="stylesheet" href="stylesheet.css">
-  	<title>Movie Search</title>
-</head>
-<h1>Groovy Movies</h1>
-<h2>Search our database for your favorite movie!</h2>
-<body>
-      <%= yield  %>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+		<!-- Bootstrap -->
+		<link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<nav class="navbar navbar-default" style="background-color: #27ae60;" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Groovy Movies</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="http://www.imdb.com/movies-in-theaters/" target="_blank">Popular</a>
+					</li>
+					<li><a href="http://www.imdb.com/boxoffice/" target="_blank">Box Office</a></li>
+					<li><a href="http://www.imdb.com/sections/dvd/" target="_blank">DVD & Blu-ray</a></li>
+				</li>
+			</ul>
+			<div class="navbar-form navbar-right" role="search">
+			<div>
+				<a href="https://twitter.com/" target="_blank" id="navbar-icon pull-right"><img title="Twitter" src="http://www.alexmanderson.com/wp-content/uploads/2014/03/Icon-Twitter.png" 		alt="Twitter" width="35" height="35" /></a>
+				<a href="https://facebook.com/" target="_blank" id="navbar-icon pull-right"><img title="Facebook" src="http://png-4.findicons.com/files/icons/1972/wood_social_networking/512/facebook_logo_square_webtreatsetc.png" alt="Facebook" width="35" height="35" /></a>
+			</div>
+			
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<h3>
+			<br></br>
+			<%=yield%>
+		</h3>
+		<h2>
+		<div id="random">
+			<script language="JavaScript">
+			// ==============================================
+			// Copyright 2004 by CodeLifter.com
+			// Free for all; but please leave in this header.
+			// ==============================================
+			var Quotation=new Array() // do not change this!
+			// Set up the quotations to be shown, below.
+			// To add more quotations, continue with the
+			// pattern, adding to the array.  Remember
+			// to increment the Quotation[x] index!
+			Quotation[0] = "'Do. Or do not. There is no try'";
+			Quotation[1] = "'Badges? We don't need no stinkin' badges!'";
+			Quotation[2] = "'I'll be back.'";
+			Quotation[3] = "'Roads? Where we're going, we don't need roads.'";
+			Quotation[4] = "'It's laundry day.'";
+			Quotation[5] = "'May the force be with you.'";
+			Quotation[6] = "'What do you need that for dude?'";
+			Quotation[7] = "'He fixes the cable.'";
+			Quotation[8] = "'Toto, I've got a feeling we're not in Kansas anymore.'";
+			Quotation[9] = "'Go ahead, make my day.'";
+			Quotation[10] = "'You talkin' to me?'";
+			Quotation[11] = "'Bond. James Bond.'";
+			Quotation[12] = "'Mama always said life was like a box of chocolates. You never know what you're gonna get.'";
+			Quotation[13] = "'It's alive! It's alive!'";
+			Quotation[14] = "'Get your stinking paws off me, you damned dirty ape!'";
+			Quotation[15] = "'My precious.'";
+			Quotation[16] = "'I'm the king of the world!";
+			// ======================================
+			// Do not change anything below this line
+			// ======================================
+			var Q = Quotation.length;
+			var whichQuotation=Math.round(Math.random()*(Q-1));
+			function showQuotation(){document.write(Quotation[whichQuotation]);}
+			showQuotation();
+			</script>
+			</h2>
+		</div>
+	<div id="nav-bottom">
+		<div class="navbar navbar-default navbar-fixed-bottom">
+				<div class="container-fluid">
+					<a href="#" class="navbar-text">Contact Us</p>
+					<a href="#" class="navbar-text">Terms of Service</a>
+					<a href="#" class="navbar-text">Privacy Policy</p>
+				</div>
+		</div>
+	</div>
 </html>

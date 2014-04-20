@@ -1,10 +1,13 @@
-<!-- array here -->
-<body> <% @movies.each do |item| %>
-		<li>
+<html>
+
+<head><link rel="stylesheet" href="/public/pages/search.css"></head>
+
+ <% @movies.each do |item| %>
+<ul>		
 			<a href='/poster/<%=item["imdbID"]%>'>
 			<%=item["Title"]%> - <%=item["Year"]%><br><br></a>
-		</li>
-
-			
+</ul>			
 <% end %>
-</body>
+
+</html>
+
