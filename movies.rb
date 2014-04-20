@@ -15,19 +15,19 @@ get '/' do
 	erb :index
 end
 
-get '/search' do
+get '/results' do
 	if params[:movie] == ""
 		redirect '/'
 	else
 		response = Typhoeus.get("http://www.omdbapi.com", :params => { :s => params[:movie]})
 		@results = JSON.parse(response.body)["Search"]
-		erb :search
+		erb :results
 	end
 end
 
-get '/show/:imdbID' do
+get '/detail/:imdbID' do
 	response = Typhoeus.get("http://www.omdbapi.com", :params => { :i => params[:imdbID]})
 	@info = JSON.parse(response.body)
 	@poster = @info["Poster"]
-	erb :show
+	erb :detail
 end

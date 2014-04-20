@@ -15,7 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	vertical-align: baseline;
 }
 
@@ -23,17 +23,39 @@ time, mark, audio, video {
 header
 ------------------------------------------ */
 h1 {
-	background-color: #CBFBDB;
+	background-color: #FFD9A5;
 	font-size: 4em;
 	font-weight: normal;
 	display: block;
-	margin: 5px;
-	top: -10px;
+	margin: 20px 0 0 0;
 }
-.top {
-	margin: 5px;
-	background-color: #FFD9A5;
+.title {
+	text-decoration: none;
+}
+a {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+a:active {
+	color: black
+}
+.search_bar {
+	background-color: #CBFBDB;
 	display: block;
+	margin: 15px 0 10px 0;
+	padding: 0 0 3px 3px;
+}
+input[type="search"] {
+	
+}
+input[type="submit"] {
+	background-color: white;
+	border: 0;
+	color: black;
+	font-weight: normal;
+	
 }
 /* ------------------------------------------
 body
@@ -47,23 +69,15 @@ body {
 li {
 	list-style-type: none;
 }
-img {
-	
+.poster {
+	border: 3px solid #FFD9A5;
+	padding: 3px;
 }
 
 .content {
-	line-height: 1.25em;
+	padding: 10px 0 10px 0;
 }
 
-a a:link {
-    text-decoration: none; 
-	font-color: #FFFFFF;
-	font-weight: normal;
-}
-a:visited a:active {
-	font-style: normal;
-	font-color: #FFFFFF;
-}
 .error {
 	font-size: 25px;
 	font-weight: bold;
@@ -83,16 +97,4 @@ a:visited a:active {
 .plot {
 	font-size: 1.5em;
 	margin-top: 5px;
-}
-.placeholder {
-	border: 1px solid black;
-	height: 400px;
-	padding: 5px;
-	display: block;
-	position: block;
-}
-footer {
-	background-color: #606F7C;
-	padding: 10px;
-	
 }
