@@ -4,6 +4,7 @@ require 'sinatra/reloader'
 require 'typhoeus'
 require 'json'
 require 'pry'
+require 'rubygems'
 
 configure do
   root = File.expand_path(File.dirname(__FILE__))
@@ -30,8 +31,8 @@ end
 
 get '/poster/:imdbID' do
   @search = params[:imdbID]
-  results = Typhoeus.get("http://www.omdbapi.com/?i=#{@search}")
-  @picture = JSON.parse(results.body)
+  res = Typhoeus.get("http://www.omdbapi.com/?i=#{@search}")
+  @picture = JSON.parse(res.body)
 
   @poster = @picture["Poster"]
   @plot = @picture["Plot"]

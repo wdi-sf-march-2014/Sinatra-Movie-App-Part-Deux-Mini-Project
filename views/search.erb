@@ -1,11 +1,14 @@
 <html>
 
-<head><link rel="stylesheet" href="/public/pages/search.css"></head>
-
+	<head>
+		<link href="stylesheets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+	</head>
  <% @movies.each do |item| %>
 <ul>		
 			<a href='/poster/<%=item["imdbID"]%>'>
 			<%=item["Title"]%> - <%=item["Year"]%><br><br></a>
+			
 </ul>			
 <% end %>
 

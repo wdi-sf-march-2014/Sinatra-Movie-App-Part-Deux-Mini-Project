@@ -1,10 +1,7 @@
 h2 {
-
 	color: black;
-	font-size: 100px;
+	font-size: 75px;
 	text-align: center;
-	margin-bottom: auto;
-	margin-top: auto;
 	margin: 2em;
 }
 
@@ -17,15 +14,15 @@ h4 {
 }
 
 .imgframe {
-   border-radius: 5%;
+   border-radius: 1%;
    background:#ffffff;
     padding:12px;
     border:1px solid #999999;
 }
 
-li {
-	color: blue;
-}
+/*body {
+	background-color: #ecf0f1;
+}*/
 
 @media screen and (max-width:320px) {
 }
@@ -37,15 +34,6 @@ li {
 @media screen and (min-width:1920px) {}
 @media print {}
 
-
-.btn-default:hover {
-  color: white;
-  background-color: #27ae60;
-}
-.btn-default {
-	border: #7f8c8d;
-	color: #7f8c8d;
-}
 
 .navbar-text {
 	text-align: justify;
