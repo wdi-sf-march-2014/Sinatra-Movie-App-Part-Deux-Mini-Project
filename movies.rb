@@ -22,10 +22,6 @@ response = Typhoeus.get("http://www.omdbapi.com/", :params => {:s => search_str}
 omdbdata = JSON.parse(response.body)
 @movies = omdbdata["Search"]
 
-# @movies.each do |h|
-# #v += redirect "'/poster/#{h["imdbID"]}' #{h["Title"]}  #{h["Year"]}"
-# v += "<a href='/movies/#{h["imdbID"]}'> #{h["Title"]}  #{h["Year"]}</a><br />"
-# end
 
 erb :search
 end
@@ -33,8 +29,12 @@ end
 get '/movies/:imdbID' do
 
 imdb_id = params[:imdbID]
-info = Typhoeus.get("http://www.omdbapi.com/", :params => {:i => imdb_id})
+info = Typhoeus.get("http://www.omdbapi.com/", :params => {:i => imdb_id, :tomatoes => true })
 infodata = JSON.parse(info.body)
+
+
+@title = infodata["Title"]
+@released = infodata['Released']
 @plot = infodata["Plot"]
 @year = infodata["Year"]
 @rated = infodata["Rated"]
@@ -43,6 +43,8 @@ infodata = JSON.parse(info.body)
 @director = infodata["Director"]
 @actors = infodata["Actors"]
 @poster = infodata["Poster"]
+@rating = infodata["imdbRating"]
+
 
 erb :show
 end
