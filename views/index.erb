@@ -4,16 +4,15 @@
 		<p> Sorry, movie not found. Try again! 
 		<form method="get" action="/results">
 		<input type="text" name="movie">
-		<input type="text" name="movie">
 		<input type="submit">
 		</form>
 	<% else %>
 	<% @movies.each do |mov|%>
-		<ul>
+		<li>
 			<a href='/info/<%=mov["imdbID"]%>'>
 				<%=mov["Title"]%> (<%=mov["Year"]%>)<br></br>
 			</a>
-		</ul>
+		</li>
 	<% end %>
 		<% end %>
 </ul>

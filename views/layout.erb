@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-	<link href="stylesheets/style.css" rel="stylesheet">
+	<link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/style.css" rel="stylesheet">
   	<title>Film Ferret</title>
 </head>
-<header>
-<h1>Film Ferret</h1>
-<h2>Find facts on your favorite films!</h2>
-</header>
 <body>
-   <%= yield  %>
+	<header>
+		<a href="/"
+			<h1 id="title">Film Ferret</h1>
+		</a>
+	</header>
+	<div class="row" id="main">
+	  <div class="col-lg-3"></div>
+	  <div class="col-lg-6" id="content">
+	  	<%= yield %>
+	  </div>
+	  <div class="col-lg-3"></div>
+ 	</div>
 </body>
 </html>
-
-
-
-
