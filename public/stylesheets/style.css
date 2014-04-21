@@ -1,0 +1,20 @@
+body {
+	background-image: url('/img/squared_metal.png');
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+.poster {
+	text-align: center;
+}
+
+.overview {
+	border: solid 2px black;
+}
+
+.plot {
+	border: solid 2px black;	
+}

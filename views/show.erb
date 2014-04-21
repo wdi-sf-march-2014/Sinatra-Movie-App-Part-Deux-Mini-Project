@@ -1,7 +1,10 @@
+<div class=poster>
+	<img src='<%=@movie["Poster"]%>'/>
+</div>
+
 <div class=overview>
-	<h2>Movie Overview:</h1>
+<h2>Movie Overview:</h2>
 		<ul>
-			<li>Poster: <a href='<%= @movie["Poster"] %>'><%= @movie["Title"] %> - <%= @movie["Year"] %></a></li>
 			<li> Released: <%= @movie["Released"] %> </li>
 			<li> Rated: <%= @movie["Rated"] %> </li>
 			<li> Runtime: <%= @movie["Runtime"] %> </li>
@@ -11,7 +14,7 @@
 		</ul>
 </div>
 
-<div class="plot">
+<div class=plot>
 	<h2>Plot:</h2>
 	<p> <%= @movie["Plot"] %> </p>
 </div>
