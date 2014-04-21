@@ -1,0 +1,21 @@
+<!--list of results-->
+<div class= oops>	
+	<% if @movies == nil %>
+		<p class= error>DOH!<br /> We can't find that movie.<br />Please search again.
+			<form method="get" action="/results">
+			<input type="text" name="movie" placeholder="Search Title...">
+			<input type="submit">
+			</form><br></br>
+				<a href="http://imgur.com/NTTM2YI"><img src="http://i.imgur.com/NTTM2YI.jpg" title="Hosted by imgur.com" /></a>
+		</p>
+</div>
+
+	<% else @movies.each do |movie| %>	
+		<li>
+			<a href='/movie/info/<%=movie["imdbID"]%>'>
+			<%=movie["Title"]%> - <%=movie["Year"]%><br></br></a>
+		<% end %>
+	<% end %>
+	
+	</li>
+
