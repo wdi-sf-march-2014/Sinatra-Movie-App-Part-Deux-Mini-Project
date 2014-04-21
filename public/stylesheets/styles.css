@@ -1,0 +1,129 @@
+body {
+text-align: center;
+vertical-align: center;
+background: white;
+background-size: cover;
+background-repeat: no-repeat;
+opacity: .85;
+
+}
+
+h1 {
+text-align: center;
+vertical-align: center;
+opacity: 1;
+background-size: 50px;
+font-family: 'Freckle Face', cursive;
+font-weight: bold;
+font-size: 1000%
+}
+
+
+h2 {
+text-align: left;
+opacity: 1;
+background-size: 50px;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 200%
+}
+
+.newspaper-a
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 600px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#movie_list { 
+    margin-left: auto; 
+    margin-right: auto; 
+    float: left;
+    border-collapse: none;
+}
+
+#movie_list td {
+    padding: 1em;
+    border: solid gray thin;
+    float: left;
+}
+
+
+.letter_1 {
+color: blue;
+float: left;
+}
+
+
+.letter_2 {
+color: red;
+float:left;
+}
+
+
+.letter_3 {
+color: yellow;
+float: left;
+}
+
+
+.letter_4 {
+color: blue;
+float: left;
+}
+
+
+.letter_5 {
+color: green;
+float: left;
+}
+
+
+.letter_6 {
+color: red;
+float: left;
+}
+
+
+.moogle {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+.form {
+
+  margin: 0 auto;
+	width: 50%;
+  text-align: center;
+  font-size: 300%
+}
+.MoogleSearch {
+  margin: 0 auto;
+  	width: 50%;
+  text-align: center;
+  font-size: 300%
+}
+
+button {
+  width: 300px;
+  height: 30px;
+
+}
+
+.poster {
+	text-align: left;
+}
+
+.details {
+	text-align: left;
+	font-size: 150%;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.attributes {
+	text-align: left;
+	font-family: sans-serif;
+}

@@ -1,0 +1,36 @@
+<div class = "form">
+<form name="myform" method="<%= @method %>" action="<%= @action %>">
+<input size = "100" width ="48" height="48" type="text" name="query" placeholder="<movie search>"  required focus />
+</div>
+<div class = "MoogleSearch">
+<button size = "100" type="submit">Moogle Search</button>
+</form>
+</div>
+
+<h2>  <%= "#{@movies.length} Results Shown" %> </h2>
+
+
+<div>
+  <br>
+  <% @movies.each do |movie| %>
+      <div ><table class = .container><thead>
+  <!--       <td>Year</td>
+        <td>Title</td>
+        <td>Plot</td> -->
+      </thead><tbody>
+      	<tr>
+      	<td>
+      	 <%=movie["Year"]%> 
+      	</td>
+      	<td>
+      	<a class="list" href="/movie/<%= movie['imdbID']  %>" > <%=movie["Title"]%> </a>
+  		</td>
+      <td>
+         <%=@movie_info_index[movie['imdbID']]["Plot"]%> 
+      </td>
+    	</tr>
+    </tbody>
+  </table></div>
+  <% end %>
+</div>
+
