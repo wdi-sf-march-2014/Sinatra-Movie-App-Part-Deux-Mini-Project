@@ -1,0 +1,24 @@
+* {
+	/*border: 2px solid black;*/
+	font-family: Arial;
+}
+
+
+#HP_Search_Box {
+	height: 20px;
+	width:523px;
+}
+
+#HP_Logo {
+	margin: auto;
+	height:125px; 
+	width:269px;
+}
+
+/*TODO: figure out how to centralize Homepage. Margin doesn't work!*/
+#HP_body {
+	/*margin: auto;*/
+	padding-top: 220px;
+	padding-left: 350px;
+	font-size: 15px;
+}

@@ -1,0 +1,16 @@
+<% if @posterDetail["Poster"] == "N/A" %>
+	<img src = "http://gradscloud.com/assets/images/not_available.jpg" />
+<%else %>
+	<img src = <%= @posterDetail["Poster"] %> /> 
+<% end %>
+</br>
+<%= @posterDetail["Plot"] %> </br>
+<%= @posterDetail["Released"] %> </br>
+<%= @posterDetail["Rated"] %> </br>
+<%= @posterDetail["Runtime"] %> </br>
+<%= @posterDetail["Genre"] %> </br>
+<%= @posterDetail["Director"] %> </br>
+<%= @posterDetail["Actors"] %> </br>
+
+
+
