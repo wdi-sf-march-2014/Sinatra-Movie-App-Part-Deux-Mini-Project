@@ -6,12 +6,20 @@ body {
 }
 a {
 	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: none;
+	font-style: bolder;
 }
 a:visited {
 	color: black;
+	text-decoration: none;
 }
 a:active {
 	color: black;
+	font-style: bolder;
 	text-decoration: none;
 } 
 h1 {
@@ -22,11 +30,24 @@ h1 {
 	margin: 0 0 5px 0;
 	padding: 5px;
 	text-align: center;
+	
+	@ media (min-width: 321px){
+		background-color: black;
+		font-size: 50px;
+		margin: 0 auto;
+		width: 768px;
+	}
 }
 .search_bar {
 	background-color: #CBFBDB;
-	margin: auto;
+	margin: 0 auto;
 	padding: 5px 5px 5px 25px;
+	
+	@media (min-width: 321px;) {
+		background-color: black;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 input[type="text"] {
 	border: 1;
@@ -53,6 +74,7 @@ body
 	font-size: 1.5em;
 	margin: 0 auto;
 	padding: 10px;
+	padding-top: 25px;
 	text-align: center;
 }
 .error {
@@ -66,8 +88,7 @@ body
 	padding: 5px;
 }
 img {
-	width: 100%
-}
+	width: 100%;
 ul {
 	list-style-type: none;
 	margin: 5px 0 0 25px;
