@@ -17,31 +17,15 @@ get '/' do
 	erb :index
 end
 
-# html_str = 
-# <<-eos
-
-# <html>
-# <header>
-# <h1 style="text-align:center;color:#4B0082">Super Awesome Movie Search!</h1>
-# </header>
-# <body style="background:#DCDCDC; text-align:center; color:#006400">
-# Search for your favorite movies with:
-# <br>Movie Title ~or~ IMDb ID number</br>
-# <br>
-# <form method="get" action="/results">
-# <input type="text" name="movie">
-# <input type="submit">
-# </form>
-# </br>
-# </body>
-# </html>
-
-# eos
-# end
-
 get '/results' do
 	if params[:movie] == ""
 		erb :index
+
+		# get '/results' do
+
+		# 	erb :index
+		# end
+
 	else
 		search = params[:movie]
 		search = search.gsub(/\s/, "%20")

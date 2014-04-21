@@ -1,8 +1,13 @@
 <!-- This is the search results (list) view file. -->
 
+
+
+<h1>Movies with "<%= params[:movie] %>" in their titles:</h1> 
+<h2>Click on a title to see more information. </h2>
+
 	<% @omdb_data["Search"].each do |movie| %>
 <li>
-	<a href='/poster/<%=movie["imdbID"]%>'>
-	<%= movie["Title"] %> - <%= movie["Year"] %><br></br></a>
+	<P><a href='/poster/<%=movie["imdbID"]%>'>
+	<%= movie["Title"] %> - <%= movie["Year"] %><br></br></a></p>
 <% end %>
 </li>
