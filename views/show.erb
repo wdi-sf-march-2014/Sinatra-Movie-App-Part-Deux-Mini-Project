@@ -1,0 +1,16 @@
+<h1 id="movie_title"><%=@result2["Title"]%></h1>
+<br><br><br>
+<div class ="elements">
+  <img id="picture" src='<%=@picture%>'/>
+    <div id ="words">
+      <p id="director">Director: <%= @result2["Director"] %></p>
+      <p id="">Released Year: <%= @result2["Released"] %></p>
+      <p id="rated">Rated: <%= @result2["Rated"] %></p>
+      <p id="runtime">Runtime: <%= @result2["Runtime"] %></p>
+      <p id="genre">Genre: <%= @result2["Genre"] %></p>
+      <!-- <p id="plot">Plot: <%= @result2["Plot"] %></p> -->
+      <p id="actors">Actors: <%= @result2["Actors"] %></p>
+    </div>
+    <br><br><br><br><br><br><br><br>
+  <a class ="button" id="end_button" href="/">Main Page</a>
+</div>

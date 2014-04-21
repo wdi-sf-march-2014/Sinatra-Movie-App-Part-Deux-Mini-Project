@@ -1,0 +1,20 @@
+<% if @movies == nil %>
+    <br><br><br><br>
+  <h1 id="error1">ERROR!</h1>
+    <br><br><br><br><br><br>
+  <h2 id ="error2">The movie name you entered didn't match any movie on file</h1>
+   <br><br>
+  <h3 id ="error3">Please go back and enter a different movie name.</h3>
+    <br><br><br><br><br><br><br>
+  <a class ="button" id="second_button" href="/">Go Back</a>
+
+<% else %>
+    <br><br><br><br>
+  <h1 id="second_head"> Results </h1>
+  <div class="movies"> <% @movies.each do |item| %>
+    <li> <a href='/show/<%=item["imdbID"]%>'>
+    <%=item["Title"]%> - <%=item["Year"]%></a>
+    </li>
+  <%end%>
+  </div>
+<%end%>

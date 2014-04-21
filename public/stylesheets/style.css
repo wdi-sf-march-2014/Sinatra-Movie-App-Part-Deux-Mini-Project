@@ -1,0 +1,129 @@
+h1 {
+  text-align: center;
+  color: rgb(52, 73, 94);
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  color: rgb(236, 240, 241);
+}
+#error1 {
+  text-align: center;
+  color:rgba(236, 38, 44,1.0);
+}
+#error3 {
+  text-align: center;
+  color: rgb(236, 240, 241);
+}
+
+form {
+  text-align: center;
+  font-family : inherit;
+  font-size   : 30px;
+  color: rgb(236, 240, 241);
+
+}
+.search {
+  height: 30px;
+  width: 300px;
+  font-size: 15px;
+}
+
+body {
+  background-image: url("http://www.hollywoodreporter.com/sites/default/files/2011/12/imdb_a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  color: rgb(236, 240, 241);
+}
+#second_head {
+  text-decoration: underline;
+}
+a {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+
+}
+a:hover {
+  color:maroon;
+}
+
+#picture {
+  float: left;
+  margin: 0 2em 0 12em;
+}
+#goback {
+  text-align: center;
+  color: white;
+}
+.movies {
+text-align: center;
+color: rgb(127, 140, 141)
+}
+
+#words {
+  /*text-align: center;*/
+  color: rgb(127, 140, 141);
+  font-size: 23px;
+}
+
+.button {
+  text-align: center;
+  background-color:#4b3f39;
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  text-decoration:none;
+  color:#fff;
+  position:relative;
+  padding:10px 20px;
+  padding-right:50px;
+  background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #9e8d84, 0px 5px 0px 0px #322620, 0px 10px 5px #999;
+}
+ 
+.button:active {
+  top:3px;
+  background-image: linear-gradient(bottom, rgb(62,51,46) 100%, rgb(101,86,78) 0%);
+  box-shadow: inset 0px 1px 0px #9e8d84, 0px 2px 0px 0px #322620, 0px 5px 3px #999;
+}
+ 
+.button::before {
+  background-color:#322620;
+  background-image:url(http://www.clker.com/cliparts/0/5/7/9/1195435734741708243kuba_arrow_button_set_2.svg.med.png);   background-repeat:no-repeat;
+  background-position:center center;
+  content:"";
+  width:20px;
+  height:20px;
+  position:absolute;
+  right:15px;
+  top:50%;
+  margin-top:-9px;
+  border-radius: 50%;
+  box-shadow: inset 0px 1px 0px #19120f, 0px 1px 0px #827066;
+}
+ 
+.button:active::before {
+  top:50%;
+  margin-top:-12px;
+  box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+}
+
+#second_button {
+  display: block;
+  width: 6em;
+}
+
+#end_button {
+  text-align: center;
+  display: block;
+  width: 6em;
+}
