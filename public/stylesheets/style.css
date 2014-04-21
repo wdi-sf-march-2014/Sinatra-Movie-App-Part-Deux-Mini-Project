@@ -11,7 +11,7 @@ div {
 h1 {
 	font-size: 40px;
 	text-align: center;
-	font-family: arial black;
+	font-family: gothic;
 	color: #f1c40f;
 }
 img {
@@ -56,4 +56,10 @@ a:hover {
 }
 button.home {
 	border-radius: 5px;
+}
+
+@media (max-device-width:480px) {
+     #page1 {
+     	font-size: 28px;
+}
 }
