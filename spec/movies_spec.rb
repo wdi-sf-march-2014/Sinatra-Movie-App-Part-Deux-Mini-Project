@@ -9,5 +9,19 @@ describe "Sinatra Movie Application With OMDB API" do
     end
   end
 
-  
+  describe "Search Results" do
+    it "should return results for the jungle book" do
+      get '/results?movie=the+jungle+book'
+      last_response.should be_ok
+    end
+	end
+
+  describe "Info page" do
+    it "should return a valid page for the jungle book poster" do
+      get '/info/tt0061852'
+      last_response.should be_ok
+    end
+  end
 end
+
+

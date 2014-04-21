@@ -1,0 +1,85 @@
+header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    background-color: #ECBE13;
+}
+
+body {
+	background: url("/curtains.jpg");
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-size: 100%;
+  margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.search_box {
+	width: 250px;
+}
+.btn {
+	margin-top: 10px;
+}
+.poster {
+	height:350px;
+	padding:10px;
+	margin-bottom:10px;
+	background-color: #EFE9C4;
+}
+.poster img{
+	border-bottom: 1px solid #777;
+	padding-bottom: 8px;
+	margin-bottom:10px;
+	width:170px;
+}
+
+.white {
+	color: white;
+	font-size: 20px;
+}
+
+.search_form {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#main {
+	padding-top: 60px; 
+
+}
+
+#title {
+	margin-top: 0px;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 70px;
+	color: #F7DD67;
+}
+
+#content {
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	padding-top: 20px;
+}
+
+#poster {
+	border: 8px double black;
+	background-color: #AD8B32;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200) {
+
+}
