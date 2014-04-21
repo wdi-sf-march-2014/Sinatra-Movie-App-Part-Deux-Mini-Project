@@ -1,19 +1,13 @@
-
-
-
-
-<%= @movies.inspect %>
-
 <ul>
 	
 <% @movies.each do |movie| %>
 
 <a href='/show/<%= movie["imdbID"] %>' >
 
+
 <li>
 		<%= title = movie["Title"] %>
-		<%= year = movie["Year"] %>
-		<%= id = movie["imdbID"] %> 
+		<%= year = movie["Year"] %> 
 </li>
 
 </a>
