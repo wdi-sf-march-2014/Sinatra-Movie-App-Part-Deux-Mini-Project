@@ -1,5 +1,5 @@
 body {
-	background: #c0392b
+	background: #34495e;
 }
 div {
 	margin-top: 300px
@@ -9,9 +9,10 @@ div {
 	margin-top: 0px;
 }
 h1 {
+	font-size: 40px;
 	text-align: center;
 	font-family: arial black;
-	color: #16a085;
+	color: #f1c40f;
 }
 img {
 	display: block;
@@ -23,13 +24,15 @@ li {
 	font-style: arial;
 	text-align: center;
 	list-style-type: none;
+	color: white;
 
 }
 form {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 300;
+	margin-top: auto;
+	margin-bottom: auto;
 	width: 220px;
 }
 #submit {
@@ -38,10 +41,11 @@ form {
 }
 img {
 	border-radius: 5px;
+	box-shadow: 5px -1px 42px #888888;
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-size: 30px;
 }
 a:hover {
@@ -49,4 +53,7 @@ a:hover {
 }
 #title {
 	font-size: 30px;
+}
+button.home {
+	border-radius: 5px;
 }
