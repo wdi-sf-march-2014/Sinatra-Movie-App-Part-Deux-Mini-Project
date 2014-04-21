@@ -1,21 +1,15 @@
 <!--poster page-->
-
-<body>
-	<div>
-		<p>
-			<img src='<%= @poster %>'/> 
-		</p>
-	</div>
-	<div>
+<div class= poster>
+	<img src='<%= @poster %>'/>
+</div>	
+<div class= movie-info>
 		<p>
 		  Rated: <%= @rating %><br></br>
 	  	Released: <%= @release %><br></br>
 	  	Runtime: <%= @runtime %><br></br>
-	  	Genre: <%= @genre %><br></br>
-	  	Director: <%= @director %><br></br>
-	  	Actors: <%= @actors %><br></br>
-	  	Plot: <%= @plot %>
+			Genre: <%= @genre %><br></br>
+		  Director: <%= @director %><br></br>
+		  Actors: <%= @actors %><br></br>
+			Plot: <%= @plot %>
 		</p>
 	</div> 
-</body>
-

@@ -1,0 +1,81 @@
+html, body {
+	margin:0;
+  padding:0;
+	height: 100%;
+	color: #EEE5DE;
+	font-family: Andale Mono;
+	background: #474747;
+	text-align: center
+}
+
+#container {
+  min-height:100%;
+  position:relative;
+}
+
+#header {
+	background: #CD4F39;
+	padding: 5px
+}
+
+#body {
+	padding: 10px;
+	padding-bottom: 30px;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	text-align: left;
+	color: #474747;
+	background: #CD4F39;
+	font-weight: bold;
+}
+
+div.search-form {
+	font-size: 25px;
+	font-weight: bold;
+	border: solid #8B8386 3px;
+	border-radius: 200px;
+	margin: 60px auto;
+	width: 200px;
+	height: 200px; 
+	padding: 50px;
+	background: url(http://i.imgur.com/QDq5Pln.jpg);
+	color: #CD4F39;
+}
+
+div.oops {
+	font-size: 16px;
+	font-weight: bold;
+	border: 5px solid #8B8B83;
+	margin: 10px 7px 20px 5px;
+}
+
+div.poster img {
+	padding: 1px;
+  border: 15px solid #8B8B83;
+  border-radius: 10px;
+  position: relative;
+}
+
+li {
+	text-align: center;
+	margin-top: 10px;
+}
+
+a {
+	color: #EEE5DE;
+}
+
+div.search-form p {
+	padding-top: 50px;
+	padding-bottom: 20px;
+} 
+
+#header p {
+	font-size: 15px;
+}

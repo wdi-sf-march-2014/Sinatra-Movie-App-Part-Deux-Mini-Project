@@ -11,7 +11,6 @@ configure do
 end
 
 get '/' do
-	# redirect to('/results')
 erb :search
 end
 
