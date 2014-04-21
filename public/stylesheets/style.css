@@ -20,9 +20,16 @@ h4 {
     border:1px solid #999999;
 }
 
-/*body {
-	background-color: #ecf0f1;
-}*/
+
+body {
+	background-image: url(http://i.imgur.com/UXXsWaG.png);
+	background-repeat: no-repeat;
+	background-position: left -5px top 70px;
+}
+
+.active  {
+	opacity: .7;
+}
 
 @media screen and (max-width:320px) {
 }
