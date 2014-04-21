@@ -5,6 +5,10 @@ h2 {
 	margin: 2em;
 }
 
+strong {
+	font-size: 80px;
+	text-align: center;
+}
 
 h4 {
 	color: black;

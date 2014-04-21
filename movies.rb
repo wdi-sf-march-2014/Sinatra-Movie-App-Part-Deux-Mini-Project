@@ -44,3 +44,15 @@ get '/poster/:imdbID' do
   @actor = @picture["Actors"]
   erb :poster
 end
+
+get '/contact' do
+  erb :contact_pg
+end
+
+get '/terms' do
+  erb :term
+end
+
+get '/privacy' do
+  erb :priv
+end
