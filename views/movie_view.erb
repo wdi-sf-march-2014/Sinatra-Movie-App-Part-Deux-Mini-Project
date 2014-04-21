@@ -1,0 +1,33 @@
+<div class = "form">
+    <form name="myform" method="<%= @method %>" action="<%= @action %>">
+    <input size = "100" width ="48" height="48" type="text" name="query" placeholder="<movie search>"  required focus />
+</div>
+<div class = "MoogleSearch">
+    <button size = "100" type="submit">Moogle Search</button>
+    </form>
+</div>
+
+  <div class="poster">
+    <% if @movie_info["Poster"] == "N/A" %>
+         <h1>No Image Available</h1>
+    <% else %>
+        <img src="<%= @movie_info["Poster"] %>"
+              alt="no picture on file"></div>
+  <% end %>
+  <div class="details">
+    <h2><%= @movie_info["Title"] %></h2>
+    </div>
+    <div class="attributes">
+      Year: <%= @movie_info["Year"] %>, Rated: <%= @movie_info["Rated"] %>,
+      Runtime: <%= @movie_info["Runtime"] %></br>
+      Genre: <%= @movie_info["Genre"] %></br>
+      Director: <%= @movie_info["Director"] %></br>
+      Writer: <%= @movie_info["Writer"] %></br>
+      Rating: <%= @movie_info["imdbRating"] %></br>
+      Votes: <%= @movie_info["imdbVotes"] %></br>
+      Type: <%= @movie_info["Type"] %></br>
+      Plot: <%= @movie_info["Plot"] %></br>
+    </div>
+
+<!--   <button onclick="changeBackground()" >Run JS</button> -->
+
