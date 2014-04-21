@@ -16,7 +16,7 @@ get '/' do
 end
 
 get '/results' do
-  search = params[:movie]
+  search = params[:movie].gsub(" ", "+")
   if search == " " || search == nil
     return "Movie not found"
   end
