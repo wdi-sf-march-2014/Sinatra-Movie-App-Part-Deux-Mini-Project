@@ -1,0 +1,47 @@
+
+body{
+	background-image: url("http://images2.alphacoders.com/445/445151.jpg");
+ 	background-repeat: 50% 50%;
+	background-size: cover;
+}
+
+h1{
+	text-align: center;
+}
+
+.search-form{
+	text-align: center;
+	color:white;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.show{
+	text-align: center;
+	color:white;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+img{
+	border:5px solid gray;
+}
+
+.search{
+	text-align: center;
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited{
+	color:yellow;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+}
