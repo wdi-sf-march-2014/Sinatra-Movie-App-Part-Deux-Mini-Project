@@ -9,8 +9,6 @@ describe "Sinatra Movie Application With OMDB API" do
 	    end
 	  end
 
-	  
-
 	  describe "Search Results" do
 	    it "should return results for Forbidden Planet" do
 	      get '/results?movie=Forbidden%20Planet'
