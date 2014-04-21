@@ -1,0 +1,22 @@
+<div class=poster>
+	<img src='<%=@movie["Poster"]%>'/>
+</div>
+
+<div class=overview>
+<h2>Movie Overview:</h2>
+		<ul>
+			<li> Released: <%= @movie["Released"] %> </li>
+			<li> Rated: <%= @movie["Rated"] %> </li>
+			<li> Runtime: <%= @movie["Runtime"] %> </li>
+			<li> Genre: <%= @movie["Genre"] %> </li>
+			<li> Director: <%= @movie["Director"] %> </li>
+			<li> Actors: <%= @movie["Actors"] %> </li>
+		</ul>
+</div>
+
+<div class=plot>
+	<h2>Plot:</h2>
+	<p> <%= @movie["Plot"] %> </p>
+</div>
+
+

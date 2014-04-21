@@ -1,0 +1,20 @@
+
+
+<ul>
+	
+<% @movies.each do |movie| %>
+
+<a href='/show/<%= movie["imdbID"] %>' >
+
+<li>
+		<%= title = movie["Title"] %>
+		<%= year = movie["Year"] %> 
+</li>
+
+</a>
+
+<% end %>
+
+</ul> 
+
+
