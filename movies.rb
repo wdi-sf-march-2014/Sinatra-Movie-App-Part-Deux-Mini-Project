@@ -12,6 +12,7 @@ configure do
 end
 
 get '/' do
+
 	erb:search
 end
 
@@ -19,7 +20,9 @@ end
 get '/results' do
 
 	search = params[:movie].gsub(" ", "+")
-	
+	# if search == "" || search == nil
+	# 	return "This movie does not exist"
+	# end
 
 		results= Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
 		omdb_data = JSON.parse(results.body)

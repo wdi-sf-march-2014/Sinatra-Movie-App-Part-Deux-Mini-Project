@@ -16,6 +16,7 @@ body {
 	background-color: #D61D35;
 	margin-left: 56px;
 	margin-right: 56px;
+	border-radius:  10px 40px 40px 10px;
 }
  form {
  		text-align: center;
@@ -31,20 +32,34 @@ input {
 .movie_list {
 	margin-top: 56px;
 	font-size: 25px;
+	color: #F0F8F1;
+	padding: 0px
 }
- }
- #poster {
+
+ /*.poster {
  	margin-left: 332px;
 	margin-top: 44px;
- }
+ }*/
  li {	list-style-type: none;
- 		color: blue;
  		text-align: center;
-
  }
 
  .title{
  		text-decoration: none;
-		text-align: center
-
+		text-align: center;
  }
+
+img {
+	margin-left: 332px;
+	margin-top: 44px;
+ 	padding:2px;
+    border:2px solid #F0F8F1;
+    background-color:#ff0;
+   }
+#home {
+	color: #D1EE15;
+	padding:  4px;
+	 border:2px solid #23792F;
+	border-radius: 50%;
+}
+/* @media*/
