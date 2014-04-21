@@ -19,17 +19,14 @@ get '/results' do
 
   if params.keys.length == 0
     erb :error
-
   elsif movie == ''
     erb :error
-
   else
     response = Typhoeus.get('www.omdbapi.com', :params => {:s => movie })
     movie_data = JSON.parse(response.body)
-
+    
     if movie_data.key?('Search') == false
       erb :error
-
     else
 
       all_titles = movie_data['Search']
@@ -44,9 +41,7 @@ get '/results' do
         @year << x['Year'].to_s
         @imdbID << x['imdbID']
       end
-
       erb :results
-
     end
   end
 end
@@ -58,7 +53,7 @@ get '/details/:imdbID' do
 
   poster_test = imdbID_details['Poster']
 
-  if poster_test == 'N/A'
+  if poster_test == "N/A"
     erb :image_error
   else
     @poster = poster_test

@@ -11,16 +11,17 @@
 	</form>
 </div>
 
-
+<center>
 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 left">
 	<br>
 	<img src='<%= @poster %>' />
 </div>
-
+</center>
+<center>
 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 right">
-	<h4><br>
-	<strong>Plot:</strong> <%= @plot %> <br><br>
-	<strong>Year:</strong> <%= @year %> <br><br>
+	<br>
+	<div class="right1"><h1><i> <%= @plot %>  </i></h1><br></div>
+	<h4><strong>Year:</strong> <%= @year %> <br><br>
 	<strong>Rating:</strong> <%= @rating %> <br><br>
 	<strong>Running Time:</strong> <%= @runtime %> <br><br>
 	<strong>Genre:</strong> <%= @genre %> <br><br>
@@ -29,3 +30,4 @@
 	<strong><a href='<%= @moreinfo %>' target='_blank'>More Info on IMDb</a></strong>
 	</h4>
 </div>
+</center>
