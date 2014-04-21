@@ -1,0 +1,28 @@
+<div class="header">
+	<h1>Heres a list of all movies matching your key-word!</h1>
+	<h1>Select your choice for more information!</h1>
+</div>
+
+<div class="header">
+	<br>
+	<form method='get' action='/results' class='form-inline' role='form'>
+		  <input type='text' class='form-control' name='movie' placeholder='Movie Title'>
+		  <button type='submit' class='btn btn-default'>Search</button>
+	</form>
+</div>
+
+<div class="header">
+	<h4>
+
+	<br><a href='details/<%= @imdbID[0] %>'> <%= @title[0] %> <%= @year[0] %> </a></br>
+	<br><a href='details/<%= @imdbID[1] %>'> <%= @title[1] %> <%= @year[1] %> </a></br>
+	<br><a href='details/<%= @imdbID[2] %>'> <%= @title[2] %> <%= @year[2] %> </a></br>
+	<br><a href='details/<%= @imdbID[3] %>'> <%= @title[3] %> <%= @year[3] %> </a></br>
+	<br><a href='details/<%= @imdbID[4] %>'> <%= @title[4] %> <%= @year[4] %> </a></br>
+	<br><a href='details/<%= @imdbID[5] %>'> <%= @title[5] %> <%= @year[5] %> </a></br>
+	<br><a href='details/<%= @imdbID[6] %>'> <%= @title[6] %> <%= @year[6] %> </a></br>
+	<br><a href='details/<%= @imdbID[7] %>'> <%= @title[7] %> <%= @year[7] %> </a></br>
+	<br><a href='details/<%= @imdbID[8] %>'> <%= @title[8] %> <%= @year[8] %> </a></br>
+	<br><a href='details/<%= @imdbID[9] %>'> <%= @title[9] %> <%= @year[9] %> </a></br>
+	</h4>
+</div>
