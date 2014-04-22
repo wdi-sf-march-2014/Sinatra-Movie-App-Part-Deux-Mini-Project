@@ -1,0 +1,10 @@
+<div id="search_results"> 
+<h1>Search Results</h1>
+</div>	
+		<% @omdb_data["Search"].each do |h| %>
+		<li>
+		<a href='/results/<%=h["imdbID"]%>'> <%=h["Title"]%> - <%=h["Year"]%> </li>
+		<% end %>
+	 	 
+	 
+
