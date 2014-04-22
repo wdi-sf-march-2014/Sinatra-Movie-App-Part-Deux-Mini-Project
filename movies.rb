@@ -17,15 +17,15 @@ end
 
 get '/results' do
 search = params[:movie]
-if search == "" || search == nil
-return "Movie not found"
-end
-
-response = Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
-results = JSON.parse(response.body)
-results.inspect 
-@movies = results["Search"]
-erb :index
+if params[:movie] == ""
+    redirect "/"
+else
+  response = Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
+  results = JSON.parse(response.body)
+  results.inspect 
+  @movies = results["Search"]
+  erb :index
+  end
 end
 
 get '/poster/:imdbID' do
