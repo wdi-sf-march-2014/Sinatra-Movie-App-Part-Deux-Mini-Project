@@ -1,9 +1,26 @@
-<!doctype html>
+<!-- template -->
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Your Title Here</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet/less" type="text/css" href="/stylesheets/less/bootstrap.less">
+	<link rel="stylesheet/less" type="text/css" href="/stylesheets/style.less">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+  <title>Movie Search</title>
 </head>
 <body>
-      <%= yield  %>
+	<header>
+		<a class="header_link" href="/"><h1>Movie Search</h1></a>
+		<div class="search_bar">
+			<form action="/results" method="get">
+				<input class="bar" type="text" name="movie" placeholder="movie title" value="<%= params[:movie] %>">
+				<input class="button" type="submit" value="Search">
+			</form>
+		</div>
+	</header>
+  <main class="main">
+  	<%= yield  %>
+  </main>
 </body>
 </html>
