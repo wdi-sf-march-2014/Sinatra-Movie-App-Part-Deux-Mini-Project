@@ -1,0 +1,55 @@
+/* This is the stylesheet. */
+
+html { 
+
+background-image: url('http://37.media.tumblr.com/tumblr_me08n74M3w1qzlp96o1_500.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+/*opacity: 0.5;
+filter:alpha(opacity=40);*/
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+
+background-size: cover;
+
+}
+
+h1 {
+
+	background-color: white 
+	/*text-align: center*/
+
+}
+
+h3 {
+	text-align: center;
+	background-color: cyan 
+}
+h4 { 
+	text-align: center; 	
+	background-color: white; 
+	opacity: 0.8;
+}
+
+p {
+	text-align: center;
+	background-color: white 
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #000
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
