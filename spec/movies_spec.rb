@@ -7,7 +7,11 @@ describe "Sinatra Movie Application With OMDB API" do
       get '/'
       last_response.should be_ok
     end
-  end
-
-  
+#is this correct?
+  describe "Results Page" do
+    it "should display movies matchin search terms" do
+    	get '/results'
+    	last_response.should be_ok
+    	expect(last_response.body).to include ("movie")
+    end
 end

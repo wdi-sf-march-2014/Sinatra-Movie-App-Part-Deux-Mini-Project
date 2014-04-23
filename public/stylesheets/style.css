@@ -1,0 +1,17 @@
+h1 {
+	font-size: 72px;
+}
+
+body {
+	background-color: rgb(153,102,153);
+	color: rgb(255,255,204);
+}
+
+div {
+    text-align: center;
+    border: solid;
+}
+ul {
+	position: relative;
+	padding-left: 500px
+}
