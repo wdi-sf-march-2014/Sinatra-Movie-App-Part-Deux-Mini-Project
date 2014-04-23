@@ -1,0 +1,13 @@
+<!-- Search results: bulleted list of possible movies-->
+
+
+<h3>For your search of <i><%= params[:movie].upcase %></i>, we found:</h3>
+<br></br>
+	<% @omdb_data.each do |movie| %>
+		<a href='/poster/<%=movie["imdbID"]%>'>
+		<%=movie["Title"]%> - <%=movie["Year"]%><br></br></a>
+	<% end %>
+
+</div>
+
+

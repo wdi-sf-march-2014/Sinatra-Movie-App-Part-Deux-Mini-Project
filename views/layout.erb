@@ -1,9 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
+
+<!-- Copied from the example sinatra_views -->
+
 <html>
-<head>
-  <title>Your Title Here</title>
-</head>
-<body>
-      <%= yield  %>
-</body>
+	<head>
+				<!-- Include BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css"  href="/stylesheets/bootstrap.min.css">
+        <!-- Include our styling defined above-->
+        <link rel="stylesheet" type="text/css"  href="/stylesheets/style.css">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		</head>
+		<body>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+							<%= yield %>
+					</div>
+				</div>
+			</div>
+		</body>
 </html>
+
