@@ -1,0 +1,50 @@
+<h1> <a class = "headline" href = '/'> Flixter </a></h1>
+<left><img class = "poster" src="<%=@poster%>" /></left>
+
+<div class = "movie_details">
+	<ul>
+	 <br></br>
+        PLOT: <%=@plot%>
+     <br></br>
+     <br></br>
+        TYPE: <%=@type%>
+     <br></br>
+     <br></br>
+        VOTES: <%=@votes%>
+     <br></br>
+     <br></br>
+        RELEASED: <%= @release %>
+     <br></br>
+     <br></br>
+        RATING: <%= @rated %>
+     <br></br>
+     <br></br>
+        RUNTIME: <%= @runtime %>
+     <br></br>
+     <br></br>
+        GENRE: <%= @genre %>
+     <br></br>
+     <br></br>
+        DIRECTOR: <%= @director %>
+     <br></br>
+     <br></br>
+        ACTORS: <%= @actor %> 
+ 	</ul>
+</div>
+
+<div class = "homepage_link">
+	<h6>Click <a href ='http://www.imdb.com/'>here</a> to go to IMDB</h6>
+</div>
+
+
+<!-- textwrap is a class which will allow the text on page to wrap around image
+movie details is a box that will control all movie details -->
+
+<!-- class = textwrap
+only for text and image on poster page
+
+class = movie details
+only for movie details on poster page
+
+class = homepage link
+shows link to home page at the bottom -->

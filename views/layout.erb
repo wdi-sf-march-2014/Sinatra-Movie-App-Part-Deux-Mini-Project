@@ -1,9 +1,29 @@
 <!doctype html>
 <html>
 <head>
-  <title>Your Title Here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheet.css">
+  <title>Flixter</title> 
+  
+
+<!--   <h1>Flixter</h1> -->
 </head>
-<body>
-      <%= yield  %>
+
+<body>	
+
+	<div class = "wrap">
+
+     	<%= yield  %> <br>
+  	</div>
+  	<div class = "footer">
+      <p>Copyright &copy; <%= Date.today.year %> Flixter </p>
+	</div>  	
 </body>
 </html>
+
+<!-- wrap is a huge box that will contain all other boxes or material on our pages
+footer is a box that will go on every page -->
+<!-- 
+class = wrap
+class = footer
+h1 goes on every page -->

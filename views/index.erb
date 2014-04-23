@@ -1,0 +1,27 @@
+<h1> <a class = "headline" href = '/'> Flixter </a></h1>
+<div class = "movies_list"> 
+		<% @movies.each do |item| %>
+		<li>
+		<a href='/poster/<%=item["imdbID"]%>'>
+		<%=item["Title"]%> - <%=item["Year"]%></a><br></br>
+		</li>
+		<% end %>
+		<div class = "homepage_link">
+		<h6>Click <a href ='http://www.imdb.com/'>here</a> to go to IMDB </h6>
+		</div>
+</div>
+
+
+
+	
+
+
+
+
+<!-- movies list is a box that will hold results for the movie search -->
+<!-- 
+class = movies list
+shows all movies based on user input
+
+class = homepage link
+links back to home page -->
