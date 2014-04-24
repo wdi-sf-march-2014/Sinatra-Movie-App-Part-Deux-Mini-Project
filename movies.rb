@@ -11,6 +11,17 @@ configure do
 end
 
 get '/' do
+	erb :form
 end
 
+get '/results' do
+	response = Typhoeus.get("http://www.omdbapi.com/", :params => {:s => params[:movie]})
+	@result = JSON.parse(response.body)
+	erb :results
+end
 
+get '/poster/:imdbid' do 
+	response = Typhoeus.get("http://www.omdbapi.com/", :params => {:i => params[:imdbid]})
+	@post_result = JSON.parse(response.body)
+	erb :poster
+end

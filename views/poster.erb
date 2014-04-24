@@ -1,0 +1,10 @@
+<h1>Movie Info</h1>
+
+<img id="post" src = <%= @post_result["Poster"] %> />
+<li><%= @post_result["Genre"] %> </li>
+<li><%= @post_result["Plot"] %> </li>
+<li><%= @post_result["Year"] %> </li>
+<li><%= @post_result["Runtime"] %> </li>
+<li>with <%= @post_result["Actors"] %> </li>
+<li>Directed by <%= @post_result["Director"] %> </li>
+<li><a href=http://www.imdb.com/title/<%= @post_result["imdbid"] %> />IMDB page</li>

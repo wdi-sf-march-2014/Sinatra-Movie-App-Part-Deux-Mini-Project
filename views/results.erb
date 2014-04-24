@@ -1,0 +1,5 @@
+<h1>Totally Normal Results</h1>
+	<% @result["Search"].each do |movie| %>
+	<li> <a href=/poster/<%= movie["imdbID"] %> > <%= "#{movie["Title"]} - #{movie["Year"]}"  %> 
+	</li>
+	<% end %>
