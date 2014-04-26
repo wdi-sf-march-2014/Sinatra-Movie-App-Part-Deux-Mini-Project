@@ -1,0 +1,28 @@
+<%if @movies == nil || @movies == ''%>
+	<h1>Error, that movie doesn't exist!</h1>
+	<form method="get" action="/">
+	   <input type="submit" value="Return to Search "> 
+	</form>
+<%else%>
+	<h1>Movie List</h1>
+	<div>
+		<ul class="popcorn">
+			
+		 <% @movies.each do |movie| %>
+		 <li>
+			 <a href='/poster/<%=movie["imdbID"]%>'>
+			 <%= movie["Title"]%>
+			 <%= movie["Year"] %>
+			 </a>
+		 </li>
+	 	<% end%>
+	 	</ul>
+ 	</div>
+ 	<div>	
+ 	<img src= images/countdown.gif>
+	</div>
+ <%end%>
+
+
+
+

@@ -1,0 +1,51 @@
+body {
+	/*background-image: url(http://00.edu-cdn.com/files/static/family-movie-night/family-movie-night-banner.jpg);*/
+	/*background-position: center center;
+	background-image: url(../images/cat.gif);
+	background-repeat: no-repeat;*/
+	background-color:#101010;
+	text-align: center;
+	color:white;
+	font-family: Sawasdee;
+	margin-left:80px;
+	margin-right: 80px;
+	margin-bottom: 0px;
+}
+
+
+
+h1 {
+	color:red;
+	font-family: Sawasdee;
+	font-weight: bolder;
+	font-size:350%;
+}
+
+.popcorn{
+	list-style-image: url(../images/PopcornKernel2.gif);
+	text-align: left;
+	margin-left: 60px;
+	font-size: 20px;
+}
+
+table {
+	margin-bottom: 80px;
+}
+
+ul {
+	display: inline-block;
+}
+
+div {
+	margin-bottom: 50px;
+}
+
+a:link{
+	color:white;
+}
+a:hover {
+	color:red;
+}
+a:visited{
+	color:gray;
+}
