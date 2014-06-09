@@ -17,8 +17,5 @@ end
 get '/movie_info/:imdbID' do
 	search = Typhoeus.get("www.omdbapi.com/", :params => {:i => params["imdbID"]})
 	@result2 = JSON.parse(search.body)
-	# trailer = Typhoeus.get("http://api.traileraddict.com/")
-	# p trailer
-	# @trailer = Json.parse(trailer.body)
 	erb :movie_info
 end
