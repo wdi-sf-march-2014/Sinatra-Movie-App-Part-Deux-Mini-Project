@@ -1,0 +1,33 @@
+<head>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<title>Results</title>
+</head>
+<body>
+	<div class="container"
+		<div id="no_result">
+			<% if @result == nil %>
+				<h2> No Results </h2>
+				<div class="search">
+		      	</br>
+		      	<a href="/"><button >Movie Search</button></a>
+		  		</div>
+			<% else %>
+		</div>
+		<div id="result">
+			<h2>Select a Movie</h2>
+		  <% @result.each do |movie| %>
+		      	<ul>
+		      		<li>
+		      			<a class="list" href="/movie_info/<%= movie['imdbID']  %>" > 
+		      				<%= movie["Title"] %> 
+		      			</a>
+		      		</li>
+		      	</ul>
+		  <% end %>
+		  <div>
+		  <a href="/"><button>Movie Search</button></a>
+		  </div>
+		</div>
+		<% end %>
+	</div>
+</body>

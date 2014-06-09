@@ -1,0 +1,35 @@
+<head>
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<title>Movie Info</title>
+</head>
+<body>
+	<div class="container"
+		<div onload="changeBackground()" >
+		  <div id="poster">
+		    <% if @result2["Poster"] == "N/A" %>
+		        <h1>No Image Available</h1>
+		    <% else %>
+		        <img  src="<%= @result2["Poster"] %>"
+		              alt="no picture on file"></div>
+		  <% end %>
+		  <div id="details">
+		    <h2><%= @result2["Title"] %></h2>
+		    <ul>
+				<li>Year: <%= @result2["Year"] %>, Rated: <%= @result2["Rated"] %></li>
+				<li>Runtime: <%= @result2["Runtime"] %></li>
+		      	<li>Genre: <%= @result2["Genre"] %></li>
+		      	<li>Director: <%= @result2["Director"] %></li>
+		      	<li>Writer: <%= @result2["Writer"] %></li>
+		      	<li>Rating: <%= @result2["imdbRating"] %></li>
+		      	<li>Votes: <%= @result2["imdbVotes"] %></li>
+		      	<li>Type: <%= @result2["Type"] %></li>
+		      	<li>Plot: <%= @result2["Plot"] %></li>
+		     </ul>
+		  </div>
+	  		<div>
+	      		</br>
+	      		<a href="/"><button >Movie Search</button></a>
+	  		</div>
+		</div>
+	</div>
+</body>

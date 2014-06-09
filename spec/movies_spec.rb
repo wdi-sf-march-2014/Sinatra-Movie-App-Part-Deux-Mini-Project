@@ -9,5 +9,13 @@ describe "Sinatra Movie Application With OMDB API" do
     end
   end
 
+    describe "Show Page" do 
+      it "should allow access to the show page" do 
+        get '/show'
+        last_response.should be_ok
+      end
+    end
+  end
+
   
 end
