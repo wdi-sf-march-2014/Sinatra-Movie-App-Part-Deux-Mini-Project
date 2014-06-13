@@ -15,7 +15,7 @@ erb:search
 end
 
 get '/results' do
-  if params["movie"] == ""
+  if params["movie"] == "" 
   redirect "/"
 end
   res = Typhoeus.get("www.omdbapi.com/", 

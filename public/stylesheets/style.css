@@ -3,7 +3,7 @@ h1 {
   font-family: Cabin Sketch, cursive;
   text-align: center;
   font-size: 75px;
-  }
+}
 
 p {
   color: rgb(180, 170, 170);
@@ -16,30 +16,27 @@ body {
   background-image: url("http://ak8.picdn.net/shutterstock/videos/3937400/preview/stock-footage-old-silent-film-style-text-frame-film-projector-flickering-background-hd.jpg");
   background-size: cover;
   background-repeat: 50% 50%;
-    
-  }
+
+}
 .butfor {
-   margin-top: 50px;
-  }
+ margin-top: 50px;
+}
 
 .plot {
-   /*max-height: 500px;
-   max-width: 500px;*/
    float: right;
    margin-right: 266px;
    min-height: 100px;
 
    width: 496px;
-   /*background-color: rgba(0, 0, 0, 0.5 ); */
    border: solid 4px  rgb(74, 121, 122);
-  }
+ }
 
-.info {
+ .info {
   background-color: rgba(0, 0, 0, 0.5 ); 
   width:600px;
   margin-left: 370px;
   text-align: center;
-  }
+}
 #button {
   background-color: rgb(0, 0, 0, 0.5 );
   padding: 15px 100px;
@@ -53,94 +50,87 @@ body {
   background-color: rgb(74, 121, 122);
   border-color: rgb(74, 121, 122);
   border-radius: 10px 10px 10px 10px;
-  }
+}
 
-  #sub1 {
+#sub1 {
   padding: 14px 77px;
   box-shadow: 1px 1px 20px 1px;
   background-color: rgb(74, 121, 122);
   border-color: rgb(74, 121, 122);
   border-radius: 10px 10px 10px 10px;
   float: right;
-  }
+}
 
-  a {
+a {
   text-decoration: none;
-   text-align: center;
-  }
-  .backbut {
-    float:right;
-  }
+  text-align: center;
+}
+.backbut {
+  float:right;
+}
 
-  li {
+li {
   text-decoration: none; 
   color: rgb(180, 170, 170);
   font-size: 30px;
   font-family: Quicksand, sans-serif;
   
-  }
-  
+}
+
 img {
   display:inline-block;
   margin-left: 161px;
   min-height: 450px;
   max-height: 450px;
-   max-width: 400px;
+  max-width: 400px;
 }
-/*footer {
-  height: 80px;
-  width: 900px;
-  background-color: black;
-  margin-top: 400px;
-  margin-left: 260px;
-}
-*/
-  @keyframes bounceInLeft {
+
+@keyframes bounceInLeft {
   0% {
-  opacity: 0;
-  transform: translateX(-2000px);
+    opacity: 0;
+    transform: translateX(-2000px);
   }
 
   60% {
-  opacity: 1;
-  transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(30px);
   }
 
   80% {
-  transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   100% {
-  transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 .bounceInLeft {
   animation-name: bounceInLeft;
 } 
-  form {
+form {
   text-align: center;
-  } 
-  
+} 
+
 @keyframes tada {
   0% {
-  transform: scale(1);
+    transform: scale(1);
   }
 
   10%, 20% {
-  transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
   }
 
   30%, 50%, 70%, 90% {
-  transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
   }
 
   40%, 60%, 80% {
-  transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
   }
 
   100% {
-  transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
   }
 }
 
@@ -245,7 +235,7 @@ img {
 
 
 @keyframes rotateIn {
-  
+
 
   0% {
     transform-origin: center center;
@@ -331,4 +321,3 @@ img {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
- 
