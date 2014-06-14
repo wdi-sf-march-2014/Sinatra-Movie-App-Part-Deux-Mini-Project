@@ -8,4 +8,5 @@ gem 'rspec'
 gem 'pg'
  gem 'unicorn'
 gem 'thin', '1.2.7'
+gem 'foreman'
 
