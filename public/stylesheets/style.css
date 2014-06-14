@@ -1,0 +1,323 @@
+h1 {
+  color: rgb(180, 170, 170);
+  font-family: Cabin Sketch, cursive;
+  text-align: center;
+  font-size: 75px;
+}
+
+p {
+  color: rgb(180, 170, 170);
+  font-family:Cabin Sketch, cursive ;
+  text-align: center;
+  font-size: 45px;
+}
+
+body {
+  background-image: url("http://ak8.picdn.net/shutterstock/videos/3937400/preview/stock-footage-old-silent-film-style-text-frame-film-projector-flickering-background-hd.jpg");
+  background-size: cover;
+  background-repeat: 50% 50%;
+
+}
+.butfor {
+ margin-top: 50px;
+}
+
+.plot {
+   float: right;
+   margin-right: 266px;
+   min-height: 100px;
+
+   width: 496px;
+   border: solid 4px  rgb(74, 121, 122);
+ }
+
+ .info {
+  background-color: rgba(0, 0, 0, 0.5 ); 
+  width:600px;
+  margin-left: 370px;
+  text-align: center;
+}
+#button {
+  background-color: rgb(0, 0, 0, 0.5 );
+  padding: 15px 100px;
+  box-shadow: 1px 1px 20px 1px;
+  background-color: rgb(219, 204, 204);
+  color: black;
+}
+#sub {
+  padding: 14px 77px;
+  box-shadow: 1px 1px 20px 1px;
+  background-color: rgb(74, 121, 122);
+  border-color: rgb(74, 121, 122);
+  border-radius: 10px 10px 10px 10px;
+}
+
+#sub1 {
+  padding: 14px 77px;
+  box-shadow: 1px 1px 20px 1px;
+  background-color: rgb(74, 121, 122);
+  border-color: rgb(74, 121, 122);
+  border-radius: 10px 10px 10px 10px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+.backbut {
+  float:right;
+}
+
+li {
+  text-decoration: none; 
+  color: rgb(180, 170, 170);
+  font-size: 30px;
+  font-family: Quicksand, sans-serif;
+  
+}
+
+img {
+  display:inline-block;
+  margin-left: 161px;
+  min-height: 450px;
+  max-height: 450px;
+  max-width: 400px;
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+} 
+form {
+  text-align: center;
+} 
+
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.tada {
+ animation-name: tada;
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+
+
+
+
+.hover {
+
+  display: inline-block;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hover:hover, .hover:focus, .hover:active {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+
+
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+    animation-timing-function: ease-in;
+  }
+}
+
+.animated.flip {
+  backface-visibility: visible;
+  animation-name: flip;
+}
+
+
+
+
+
+@keyframes rotateIn {
+
+
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation-name: rotateIn;
+}
+
+
+
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+/* Buzz */
+@-webkit-keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.buzz {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.buzz:hover, .buzz:focus, .buzz:active {
+  -webkit-animation-name: buzz;
+  animation-name: buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

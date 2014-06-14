@@ -1,0 +1,24 @@
+<h1 class="animated @keyframes rotateIn"><%= @pic["Title"] %></h1>
+<ul id="info">
+  <img class="hover" id="poster"src = <%= @pic["Poster"] %> />
+  <div class = "plot">
+   <li class="hover"> Plot:   <%= @pic["Plot"] %></li></div><br>
+   <div class="info">
+     <ul>
+       <li class="hover"> Actors: <%= @pic["Actors"] %></li><br><br>
+       <li class="hover"> Awards: <%= @pic["Awards"] %></li><br><br>
+       <li class="hover"> Year Released:   <%= @pic["Year"] %></li><br><br>
+       <li class="hover"> Rated:  <%= @pic["Rated"] %></li><br><br>
+       <li class="hover"> Genre:  <%= @pic["Genre"]  %></li><br><br>
+       <li class="hover"> IMDB Votes:  <%= @pic["imdbVotes"] %></li><br><br>
+       <li class="hover"> IMDB Rating: <%= @pic["imdbRating"] %></li><br><br>
+       <li class="hover"> Runtime: <%= @pic["Runtime"] %></li><br><br>
+       <li class="hover"> Director: <%= @pic["Director"] %></li><br><br>
+     </ul>
+
+   </div>
+   <a href="/"><button id="sub"> Back To Movie Search </button></a>
+   <a href="/results?movie=<%= %>"><button id="sub1"> Back To Pick a movie </button></a>
+
+
+
