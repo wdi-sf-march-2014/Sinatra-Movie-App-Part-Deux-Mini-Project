@@ -1,16 +1,16 @@
 <h1 class="animated @keyframes flip"> Pick a Movie</h1>
 
 <% @movies.each do |movie| %>
- <div class="Response">
+<div class="Response">
   <a href='/movie/<%= movie["imdbID"] %>'>
    <ul>
     <li class="@-webkit-keyframes buzz "><%= movie["Title"] %></li>
-   </ul>
-  </a>
- </div>
+  </ul>
+</a>
+</div>
 <% end %>
- 
- <a href="/"><button id="sub"> Back To Movie Search </button></a>
+
+<a href="/"><button id="sub"> Back To Movie Search </button></a>
 
 
 
