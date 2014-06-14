@@ -6,9 +6,6 @@ gem 'typhoeus'
 gem 'pry'
 gem 'rspec'
 gem 'pg'
+ gem 'unicorn'
 gem 'thin', '1.2.7'
-
-group :production do
-  gem 'rails_12factor'
-end
 
