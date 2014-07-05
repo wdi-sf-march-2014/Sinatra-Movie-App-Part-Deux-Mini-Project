@@ -4,22 +4,16 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Groovy Movies</title>
+		<title>MovieSearch415</title>
 		<!-- Bootstrap -->
 		<link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="/stylesheets/style.css">
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
 	</head>
 	<nav class="navbar navbar-default" style="background-color: #00FA9A;" role="navigation">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Groovy Movies</a>
+				<a class="navbar-brand" href="/">Movie Search 415</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,26 +43,27 @@
 		</h3>
 		
 		<div id="random">
-
+			<!-- random quote generator -->
 			<% rand_array = [
-			"'Do. Or do not. There is no try'",
-			"'Badges? We dont need no stinkin' badges!'",
-			"'I'll be back.'",
-			"'Roads? Where we're going, we dont need roads.'",
-			"'It's laundry day.'",
-			"'May the force be with you.'",
-			"'What do you need that for dude?'",
-			"'He fixes the cable.'",
-			"'Toto, Ive got a feeling we're not in Kansas anymore.'",
-			"'Go ahead, make my day.'",
-			"'You talkin to me?'",
-			"'Bond. James Bond.'",
-			"'Get to the choppa!'",
-			"'Its alive! Its alive!'",
-			"'Get your stinking paws off me, you damned dirty ape!'",
-			"'My precious.'",
-			"'I'm the king of the world!'"]%>
-			<h2><%= rand_array.sample %></h2>
+				"'Do. Or do not. There is no try'",
+				"'Badges? We dont need no stinkin' badges!'",
+				"'I'll be back.'",
+				"'Roads? Where we're going, we dont need roads.'",
+				"'It's laundry day.'",
+				"'May the force be with you.'",
+				"'What do you need that for dude?'",
+				"'He fixes the cable.'",
+				"'Toto, Ive got a feeling we're not in Kansas anymore.'",
+				"'Go ahead, make my day.'",
+				"'You talkin to me?'",
+				"'Bond. James Bond.'",
+				"'Get to the choppa!'",
+				"'Its alive! Its alive!'",
+				"'Get your stinking paws off me, you damned dirty ape!'",
+				"'My precious.'",
+				"'I'm the king of the world!'"
+			]%>
 
+			<h2><%= rand_array.sample %></h2>
 		</div>
 </html>
