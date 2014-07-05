@@ -4,6 +4,6 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'typhoeus'
 
-gem 'pry'
+# gem 'pry'
 gem 'rspec'
 # gem 'bootstrap-sass'
