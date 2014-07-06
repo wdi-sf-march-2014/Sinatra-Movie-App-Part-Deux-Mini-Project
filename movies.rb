@@ -16,14 +16,14 @@ end
 
 get '/results' do
   search = params[:movie].gsub(" ", "+")
-  if search == " " || search == nil
-    return "Movie not found"
-  end
 
   results = Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
   omdb_data = JSON.parse(results.body)
-  omdb_data.inspect
   @movies = omdb_data["Search"]
+  # validation if search result == nil
+  if @movies == nil
+    redirect '/'
+  end
 
   erb :search
 end
