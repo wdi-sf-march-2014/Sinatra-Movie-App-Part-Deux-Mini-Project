@@ -3,7 +3,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'typhoeus'
 require 'json'
-require 'pry'
 require 'rubygems'
 
 configure do
@@ -16,15 +15,15 @@ get '/' do
 end
 
 get '/results' do
-  search = params[:movie]
-  if search == " " || search == nil
-    return "Movie not found"
-  end
+  search = params[:movie].gsub(" ", "+")
 
   results = Typhoeus.get("http://www.omdbapi.com/?s=#{search}")
   omdb_data = JSON.parse(results.body)
-  omdb_data.inspect
   @movies = omdb_data["Search"]
+  # validation if search result == nil
+  if @movies == nil
+    redirect '/'
+  end
 
   erb :search
 end
@@ -43,16 +42,4 @@ get '/poster/:imdbID' do
   @director = @picture["Director"]
   @actor = @picture["Actors"]
   erb :poster
-end
-
-get '/contact' do
-  erb :contact_pg
-end
-
-get '/terms' do
-  erb :term
-end
-
-get '/privacy' do
-  erb :priv
 end
