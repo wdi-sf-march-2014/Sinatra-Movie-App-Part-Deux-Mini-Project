@@ -9,5 +9,18 @@ describe "Sinatra Movie Application With OMDB API" do
     end
   end
 
+  describe "Search results" do
+    it "should return results for matrix" do
+      get '/results?movie=matrix'
+      last_response.should be_ok
+    end
+  end
+
+  describe "poster page" do
+    it "should show poster for matrix" do
+      get '/poster/tt0133093'
+      last_response.should be_ok
+    end
+  end
   
 end

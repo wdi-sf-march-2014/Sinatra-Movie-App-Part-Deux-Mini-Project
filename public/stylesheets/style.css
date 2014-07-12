@@ -1,0 +1,67 @@
+h2 {
+	color: black;
+	font-size: 75px;
+	text-align: center;
+	margin: 2em;
+}
+
+strong {
+	font-size: 80px;
+	text-align: center;
+}
+
+h4 {
+	color: black;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 20px;
+}
+
+.imgframe {
+   border-radius: 1%;
+   background:#ffffff;
+    padding:12px;
+    border:1px solid #999999;
+}
+
+
+body {
+	background-image: url(http://i.imgur.com/UXXsWaG.png);
+	background-repeat: no-repeat;
+	background-position: left -5px top 70px;
+}
+
+.active  {
+	opacity: .7;
+}
+
+@media screen and (max-width:320px) {
+}
+@media screen and (min-width:321px) and (max-width:639px) {}
+@media screen and (min-width:640px) and (max-width:959px) {}
+@media screen and (min-width:960px) and (max-width:1279px) {}
+@media screen and (min-width:1280px) and (max-width:1599px) {}
+@media screen and (min-width:1600px) {}
+@media screen and (min-width:1920px) {}
+@media print {}
+
+
+.navbar-text {
+	text-align: justify;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center;  
+}

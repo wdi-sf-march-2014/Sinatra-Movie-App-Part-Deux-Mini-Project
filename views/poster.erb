@@ -1,0 +1,24 @@
+
+<html>
+	<head>
+		<link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/poster.css">
+	</head>
+	<center><label>Poster not displaying due to IMDB blocking Heroku</label></center>
+		<center><img src="<%=@picture['Poster']%>" alt="" class="imgframe"/></center>
+		<h4><a href="http://www.imdb.com/title/<%=@search %>" target="_blank" id="imdb-icon"><img title="IMDB" 	src="http://www.kevinbishopentertainment.com/images/imdb.png" alt="IMDB" width="85" height="85" /></a></h4>
+	<div class="container-fluid">
+	
+			<div class="list-group">
+				<div class="list-group">Plot: <%=@plot%></div>
+				<div class="list-group">Release Date: <%=@release%></div>
+				<div class="list-group">Rated: <%=@rated%></div>
+				<div class="list-group">Runtime: <%=@runtime%></div>
+				<div class="list-group">Genre: <%=@genre%></div>
+				<div class="list-group">Director: <%=@director%></div>
+				<div class="list-group">Cast: <%=@actor%></div>
+				
+			</div>
+	
+	</div>
+</html>

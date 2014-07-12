@@ -1,9 +1,69 @@
-<!doctype html>
-<html>
-<head>
-  <title>Your Title Here</title>
-</head>
-<body>
-      <%= yield  %>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MovieSearch415</title>
+		<!-- Bootstrap -->
+		<link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/stylesheets/style.css">
+	</head>
+	<nav class="navbar navbar-default" style="background-color: #00FA9A;" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Movie Search 415</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="http://www.imdb.com/movies-in-theaters/" target="_blank">Popular</a>
+					</li>
+					<li><a href="http://www.imdb.com/boxoffice/" target="_blank">Box Office</a></li>
+					<li><a href="http://www.imdb.com/sections/dvd/" target="_blank">DVD & Blu-ray</a></li>
+				</li>
+			</ul>
+			<div class="navbar-form navbar-right" role="search">
+			<div>
+				<a href="https://twitter.com/moviesearch415" target="_blank" id="navbar-icon pull-right"><img title="Twitter" src="http://www.alexmanderson.com/wp-content/uploads/2014/03/Icon-Twitter.png" 		alt="Twitter" width="35" height="35" /></a>
+				<a href="https://facebook.com/moviesearch415" target="_blank" id="navbar-icon pull-right"><img title="Facebook" src="http://png-4.findicons.com/files/icons/1972/wood_social_networking/512/facebook_logo_square_webtreatsetc.png" alt="Facebook" width="35" height="35" /></a>
+			</div>
+			
+			</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<h3>
+			<td>&nbsp;</td>
+			<%=yield%>
+		</h3>
+		
+		<div id="random">
+			<!-- random quote generator -->
+			<% rand_array = [
+				"'Do. Or do not. There is no try'",
+				"'Badges? We dont need no stinkin' badges!'",
+				"'I'll be back.'",
+				"'Roads? Where we're going, we dont need roads.'",
+				"'It's laundry day.'",
+				"'May the force be with you.'",
+				"'What do you need that for dude?'",
+				"'He fixes the cable.'",
+				"'Toto, Ive got a feeling we're not in Kansas anymore.'",
+				"'Go ahead, make my day.'",
+				"'You talkin to me?'",
+				"'Bond. James Bond.'",
+				"'Get to the choppa!'",
+				"'Its alive! Its alive!'",
+				"'Get your stinking paws off me, you damned dirty ape!'",
+				"'My precious.'",
+				"'I'm the king of the world!'"
+			]%>
+
+			<h2><%= rand_array.sample %></h2>
+		</div>
 </html>
